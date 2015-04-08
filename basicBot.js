@@ -40,9 +40,9 @@
 
     var subChat = function (chat, obj) {
         if (typeof chat === "undefined") {
-            API.chatLog("There is a chat text missing.");
-            console.log("There is a chat text missing.");
-            return "[Error] No text message found.";
+            API.chatLog("You done fu*ked up!");
+            console.log("You done fu*ked up!");
+            return "[Error] You done fu*ked up!";
         }
         var lit = '%%';
         for (var prop in obj) {
@@ -1736,34 +1736,34 @@
                 }
             },
 
-            cookieCommand: {
-                command: 'cookie',
+            candyCommand: {
+                command: 'candy',
                 rank: 'user',
                 type: 'startsWith',
-                cookies: ['has given you a chocolate chip cookie!',
-                    'has given you a soft homemade oatmeal cookie!',
-                    'has given you a plain, dry, old cookie. It was the last one in the bag. Gross.',
-                    'gives you a sugar cookie. What, no frosting and sprinkles? 0/10 would not touch.',
-                    'gives you a chocolate chip cookie. Oh wait, those are raisins. Bleck!',
-                    'gives you an enormous cookie. Poking it gives you more cookies. Weird.',
-                    'gives you a fortune cookie. It reads "Why aren\'t you working on any projects?"',
-                    'gives you a fortune cookie. It reads "Give that special someone a compliment"',
-                    'gives you a fortune cookie. It reads "Take a risk!"',
-                    'gives you a fortune cookie. It reads "Go outside."',
-                    'gives you a fortune cookie. It reads "Don\'t forget to eat your veggies!"',
-                    'gives you a fortune cookie. It reads "Do you even lift?"',
-                    'gives you a fortune cookie. It reads "m808 pls"',
-                    'gives you a fortune cookie. It reads "If you move your hips, you\'ll get all the ladies."',
-                    'gives you a fortune cookie. It reads "I love you."',
-                    'gives you a Golden Cookie. You can\'t eat it because it is made of gold. Dammit.',
-                    'gives you an Oreo cookie with a glass of milk!',
-                    'gives you a rainbow cookie made with love :heart:',
-                    'gives you an old cookie that was left out in the rain, it\'s moldy.',
-                    'bakes you fresh cookies, it smells amazing.'
+                candies: ['has given you a chocolate chip candy!',
+                    'has given you a soft homemade oatmeal candy!',
+                    'has given you a plain, dry, old candy. It was the last one in the bag. Gross.',
+                    'gives you a sugar candy. What, no frosting and sprinkles? 0/10 would not touch.',
+                    'gives you a chocolate chip candy. Oh wait, those are raisins. Bleck!',
+                    'gives you an enormous candy. Poking it gives you more candies. Weird.',
+                    'gives you a fortune candy. It reads "Why aren\'t you working on any projects?"',
+                    'gives you a fortune candy. It reads "Give that special someone a compliment"',
+                    'gives you a fortune candy. It reads "Take a risk!"',
+                    'gives you a fortune candy. It reads "Go outside."',
+                    'gives you a fortune candy. It reads "Don\'t forget to eat your veggies!"',
+                    'gives you a fortune candy. It reads "Do you even lift?"',
+                    'gives you a fortune candy. It reads "m808 pls"',
+                    'gives you a fortune candy. It reads "If you move your hips, you\'ll get all the ladies."',
+                    'gives you a fortune candy. It reads "I love you."',
+                    'gives you a Golden Candy. You can\'t eat it because it is made of gold. Dammit.',
+                    'gives you an Oreo candy with a glass of milk!',
+                    'gives you a rainbow candy made with love :heart:',
+                    'gives you an old candy that was left out in the rain, it\'s moldy.',
+                    'bakes you fresh candy, it smells amazing.'
                 ],
-                getCookie: function () {
-                    var c = Math.floor(Math.random() * this.cookies.length);
-                    return this.cookies[c];
+                getCandy: function () {
+                    var c = Math.floor(Math.random() * this.candies.length);
+                    return this.candies[c];
                 },
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -1773,20 +1773,20 @@
 
                         var space = msg.indexOf(' ');
                         if (space === -1) {
-                            API.sendChat(basicBot.chat.eatcookie);
+                            API.sendChat(basicBot.chat.eatcandy);
                             return false;
                         }
                         else {
                             var name = msg.substring(space + 2);
                             var user = basicBot.userUtilities.lookupUserName(name);
                             if (user === false || !user.inRoom) {
-                                return API.sendChat(subChat(basicBot.chat.nousercookie, {name: name}));
+                                return API.sendChat(subChat(basicBot.chat.nousercandy, {name: name}));
                             }
                             else if (user.username === chat.un) {
-                                return API.sendChat(subChat(basicBot.chat.selfcookie, {name: name}));
+                                return API.sendChat(subChat(basicBot.chat.selfcandy, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.cookie, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
+                                return API.sendChat(subChat(basicBot.chat.Candy, {nameto: user.username, namefrom: chat.un, candy: this.getcandy()}));
                             }
                         }
                     }
