@@ -1786,7 +1786,7 @@
                                 return API.sendChat(subChat(basicBot.chat.selfcandy, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.Candy, {nameto: user.username, namefrom: chat.un, candy: this.getcandy()}));
+                                return API.sendChat(subChat(basicBot.chat.candy, {nameto: user.username, namefrom: chat.un, candy: this.getCandy()}));
                             }
                         }
                     }
