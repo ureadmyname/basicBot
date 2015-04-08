@@ -78,7 +78,7 @@
     "chatcleared": "/me [@%%NAME%%] A nettoyé le chat.",
     "deletechat": "/me [@%%NAME%%] A nettoyé le chat de %%USERNAME%%.",
     "commandslink": "/me %%BOTNAME%% commandes: %%LINK%%",
-    "eatcandy": "/me mange un candy.",
+    "eatcandy": "/me mange un candies.",
     "nousercandy": "/me ne voit pas %%NAME%% dans la salle et mange le candy.",
     "selfcandy": "/me @%%NAME%%, tu est un peu radin non ? Te donner des candy à toi même... Partage les avec d'autres gens !",
     "candy": "/me @%%NAMETO%%, @%%NAMEFROM%% %%CANDY%%",
