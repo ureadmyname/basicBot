@@ -98,7 +98,7 @@ User
 |!autowoot | | links to PlugCubed, the advised script/plugin to use for autowooting |
 |!ba | | explains the Brand Ambassador rank |
 |!commands | | gives a link to the commands |
-|!cookie | (@user) | give a cookie to user |
+|!candy | (@user) | give a candy to user |
 |!dclookup / !dc | | use dclookup on yourself |
 |!emoji | | a link to a list with emoji's |
 |!eta | | shows how long before you reach the booth |
