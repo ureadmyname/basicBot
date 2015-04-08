@@ -180,7 +180,7 @@
 
     var basicBot = {
         version: "2.3.4",
-        status: true,
+        status: false,
         name: "basicBot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/ureadmyname/basicBot/master/basicBot.js",
