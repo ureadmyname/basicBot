@@ -111,8 +111,11 @@ User
 |!link | | when the user is the DJ, give a link to the current song |
 |!op | | links to the OverPlayed list (if set in the settings) |
 |!ping | | pong! |
+|!props | (@user) | give props to somebody for playing an amazing song |
 |!purchase | | returns link to purchase more plug notes |
 |!rules | | links to the rules (if set in the settings) |
 |!theme | | links to the room's theme (if set in the settings) |
 |!website | | links to the room's website (if set in the settings) |
 |!youtube | | links to the room's youtube page (if set in the settings) |
+
+// candy is not working atm!
