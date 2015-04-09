@@ -98,6 +98,7 @@ User
 |!8ball | (message) | ask the bot a question, the bot will return random variations of a yes or no answer. |
 |!autowoot | | links to PlugCubed, the advised script/plugin to use for autowooting |
 |!ba | | explains the Brand Ambassador rank |
+|!bleepbloop | (@user) | annoy the FUCK! out of some1! |
 |!candy | (@user) | give a candy to user |
 |!commands | | gives a link to the commands |
 |!cookie | (@user) | give a cookie to user |
