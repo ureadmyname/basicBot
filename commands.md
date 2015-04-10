@@ -53,6 +53,7 @@ Bouncer
 |!autodisable | | toggle the autodisable |
 |!ban | @user | bans user for 1 day |
 |!blacklist / !bl | blacklistname | add the song to the specified blacklist |
+|!bleepbloop | | trolliest command ever! |
 |!blinfo | | get information required to blacklist a song |
 |!cycleguard | | toggles the cycleguard |
 |!dclookup / !dc | (@user) | do dclookup for user |
@@ -116,6 +117,8 @@ User
 |!ping | | pong! |
 |!purchase | | returns link to purchase more plug notes |
 |!rules | | links to the rules (if set in the settings) |
+|!shuffle | | show the meaning of Wednesday and Friday |
 |!theme | | links to the room's theme (if set in the settings) |
+|!troll | | show a trollface |
 |!website | | links to the room's website (if set in the settings) |
 |!youtube | | links to the room's youtube page (if set in the settings) |
