@@ -3,13 +3,12 @@
     "nodatafound": "No previous data found.",
     "retrievingdata": "Retrieving previously stored data.",
     "datarestored": "Previously stored data successfully retrieved.",
-    "greyuser": "Only bouncers and up can run a bot.",
     "bouncer": "The bot can't move people when it's run as a bouncer.",
     "online": "/me %%BOTNAME%% v%%VERSION%% online!",
 
 
-    "welcome": "/me Welcome %%NAME%%",
-    "welcomeback": "/me Welcome back, %%NAME%%",
+    "welcome": "/me Everybody Welcome %%NAME%%"!,
+    "welcomeback": "/me Welcome Back %%NAME%%"!,
     "songknown": "/me @%%NAME%%, this song is in the DJ history.",
     "timelimit": "/me @%%NAME%%, your song is longer than %%MAXLENGTH%% minutes, you need permission to play longer songs.",
     "permissionownsong": "/me :up: @%%NAME%% has permission to play their own production!",
