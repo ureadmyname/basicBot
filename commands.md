@@ -100,7 +100,7 @@ User
 |!autowoot | | links to PlugCubed, the advised script/plugin to use for autowooting |
 |!ba | | explains the Brand Ambassador rank |
 |!bleepbloop | (@user) | annoy the FUCK! out of some1! |
-|!candy | (@user) | give a candy to user |
+|!candy | (@user) | give a candy to user | (not working)
 |!commands | | gives a link to the commands |
 |!cookie | (@user) | give a cookie to user |
 |!dclookup / !dc | | use dclookup on yourself |
