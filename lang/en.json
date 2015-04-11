@@ -8,7 +8,7 @@
     "online": "/me %%BOTNAME%% v%%VERSION%% online!",
 
 
-    "welcome": "/me Everybody welcome, %%NAME%%",
+    "welcome": "/me Welcome %%NAME%%",
     "welcomeback": "/me Welcome back, %%NAME%%",
     "songknown": "/me @%%NAME%%, this song is in the DJ history.",
     "timelimit": "/me @%%NAME%%, your song is longer than %%MAXLENGTH%% minutes, you need permission to play longer songs.",
