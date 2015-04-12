@@ -18,6 +18,7 @@ Manager
 |!killtroll | | what all trolls deserve muwahahahah!!! |
 |!locktimer | X | set the maximum time the waitlist can be locked if lockguard is enabled |
 |!logout | | logs out account bot is hosted on |
+|!plugcolor | | sends a link to the greatest script ever! XD |
 |!refresh | | refreshes the browser of whoever runs the bot |
 |!usercmdcd | X | set the cooldown on commands by grey users |
 |!usercommands | | toggle user commands |
