@@ -15,6 +15,7 @@ Manager
 |!cycle | | toggle DJ cycle |
 |!cycletimer | X | set the maximum DJ cycle time for when cycleguard is enabled |
 |!fav |  | tells people how to favorite the room! |
+|!killtroll | | what all trolls deserve muwahahahah!!! |
 |!locktimer | X | set the maximum time the waitlist can be locked if lockguard is enabled |
 |!logout | | logs out account bot is hosted on |
 |!refresh | | refreshes the browser of whoever runs the bot |
