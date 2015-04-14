@@ -11,8 +11,9 @@ Manager
 |Command | Arguments |  Description |
 |:------:|:---------:|:--------------------------------------:|
 |!afklimit | X | sets the maximum afk time |
-|!autofav | | make !fav be displayed every hour |
-|!autoroulette | | make !roulette be displayed every 90 minutes |
+|!autofav | | make !fav be displayed on a timer |
+|!autoroulette | | make !roulette be displayed on a timer |
+|!autoshuffle | | make !shuffle be displayed on a timer |
 |!clearchat | |clears the chat |
 |!cycle | | toggle DJ cycle |
 |!cycletimer | X | set the maximum DJ cycle time for when cycleguard is enabled |
