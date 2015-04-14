@@ -11,18 +11,19 @@ Manager
 |Command | Arguments |  Description |
 |:------:|:---------:|:--------------------------------------:|
 |!afklimit | X | sets the maximum afk time |
+|!autofav | | make !fav be displayed every hour |
+|!autoroulette | | make !roulette be displayed every 90 minutes |
 |!clearchat | |clears the chat |
 |!cycle | | toggle DJ cycle |
 |!cycletimer | X | set the maximum DJ cycle time for when cycleguard is enabled |
-|!fav |  | tells people how to favorite the room! |
-|!killtroll | | what all trolls deserve muwahahahah!!! |
+|!killtroll | | what all trolls deserve muwahahahah |
 |!locktimer | X | set the maximum time the waitlist can be locked if lockguard is enabled |
 |!logout | | logs out account bot is hosted on |
 |!plugcolor | | sends a link to the greatest script ever! XD |
 |!refresh | | refreshes the browser of whoever runs the bot |
 |!usercmdcd | X | set the cooldown on commands by grey users |
 |!usercommands | | toggle user commands |
-|!voteskip | (X) | when no argument is specified, returns the current voteskip limit, when X is specified, voteskip limit is updated to the new specified limit. |
+|!voteskip | (X) | when no argument is specified, returns the current voteskip limit, when X is specified, voteskip limit is updated to the new specified limit |
 
 Bouncer+
 --------
@@ -55,7 +56,7 @@ Bouncer
 |!autodisable | | toggle the autodisable |
 |!ban | @user | bans user for 1 day |
 |!blacklist / !bl | blacklistname | add the song to the specified blacklist |
-|!bleepbloop | | trolliest command ever! |
+|!bleepbloop | (@user) | the trolliest command ever |
 |!blinfo | | get information required to blacklist a song |
 |!cycleguard | | toggles the cycleguard |
 |!dclookup / !dc | (@user) | do dclookup for user |
@@ -98,10 +99,9 @@ User
 
 |Command | Arguments |  Description |
 |:------:|:---------:|:--------------------------------------:|
-|!8ball | (message) | ask the bot a question, the bot will return random variations of a yes or no answer. |
+|!8ball | (message) | ask the bot a question, the bot will return random variations of a yes or no answer |
 |!autowoot | | links to PlugCubed, the advised script/plugin to use for autowooting |
 |!ba | | explains the Brand Ambassador rank |
-|!bleepbloop | (@user) | annoy the FUCK! out of some1! |
 |!candy | (@user) | give a candy to user ***(NOT WORKING!)***|
 |!commands | | gives a link to the commands |
 |!cookie | (@user) | give a cookie to user |
