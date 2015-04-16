@@ -100,9 +100,13 @@
     "deletechat": "/me [@%%NAME%%] Cleared the chat of %%USERNAME%%.",
     "commandslink": "/me %%BOTNAME%% commands: %%LINK%%",
     "eatcookie": "/me eats a cookie.",
+    "doprops": "/me says prop.",
     "nousercookie": "/em doesn't see %%NAME%% in room and eats a cookie himself.",
+    "nopropstogive": "/em there isn't a person called %%NAME%% give props to people who are here",
     "selfcookie": "/me @%%NAME%%, you're a bit greedy, aren't you? Giving cookies to yourself, bah. Share some with other people!",
+    "propyourselfup": "/me @%%NAME%% you're greedy, giving yourself props, why not give another person props?,
     "cookie": "/me @%%NAMETO%%, @%%NAMEFROM%% %%COOKIE%%",
+    "prop": "/me @%%NAMETO%%, @%%NAMEFROM%% %%COOKIE%%"
     "cycleguardtime": "/me [@%%NAME%%] The cycleguard is set to %%TIME%% minute(s).",
     "dclookuprank": "/me [@%%NAME%%] Only bouncers and above can do a lookup for others.",
     "emojilist": "/me Emoji list: %%LINK%%",
