@@ -8,7 +8,7 @@
     "online": "/me %%BOTNAME%% v%%VERSION%% online!",
 
 
-    "welcome": "/me Everyobdy Welcome %%NAME%%",
+    "welcome": "/me Everybody Welcome %%NAME%%",
     "welcomeback": "/me Everybody Welcome back, %%NAME%%",
     "songknown": "/me @%%NAME%%, this song is in the DJ history.",
     "timelimit": "/me @%%NAME%%, your song is longer than %%MAXLENGTH%% minutes, you need permission to play longer songs.",
@@ -99,10 +99,6 @@
     "chatcleared": "/me [@%%NAME%%] Cleared the chat.",
     "deletechat": "/me [@%%NAME%%] Cleared the chat of %%USERNAME%%.",
     "commandslink": "/me %%BOTNAME%% commands: %%LINK%%",
-    "eatcandy": "/me eats a candies.",
-    "nousercandy": "/em doesn't see %%NAME%% in room and eats a candies himself.",
-    "selfcandy": "/me @%%NAME%%, you're a bit greedy, aren't you? Giving candies to yourself, bah. Share some with other people!",
-    "candy": "/me @%%NAMETO%%, @%%NAMEFROM%% %%CANDY%%",
     "eatcookie": "/me eats a cookie.",
     "nousercookie": "/em doesn't see %%NAME%% in room and eats a cookie himself.",
     "selfcookie": "/me @%%NAME%%, you're a bit greedy, aren't you? Giving cookies to yourself, bah. Share some with other people!",
