@@ -1735,7 +1735,12 @@
                     }
                 }
             },
-
+            
+getCandy: function () {
+                    var ca = Math.floor(Math.random() * this.candies.length);
+                    return this.candies[ca];
+                },
+                
             cookieCommand: {
                 command: 'cookie',
                 rank: 'user',
