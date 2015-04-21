@@ -106,6 +106,7 @@ User
 |!candy | (@user) | give a candy to user ***(NOT WORKING!)***|
 |!commands | | gives a link to the commands |
 |!cookie | (@user) | give a cookie to user |
+|!dcinfo | | information about the dc command |
 |!dclookup / !dc | | use dclookup on yourself |
 |!emoji | | a link to a list with emoji's |
 |!eta | | shows how long before you reach the booth |
