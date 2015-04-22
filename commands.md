@@ -121,6 +121,7 @@ User
 |!op | | links to the OverPlayed list (if set in the settings) |
 |!ping | | pong! |
 |!purchase | | returns link to purchase more plug notes |
+|!ref | | I.T support command for plug.dj |
 |!rules | | links to the rules (if set in the settings) |
 |!shuffle | | show the meaning of Wednesday and Friday |
 |!theme | | links to the room's theme (if set in the settings) |
