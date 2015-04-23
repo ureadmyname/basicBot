@@ -17,7 +17,6 @@ Manager
 |!clearchat | |clears the chat |
 |!cycle | | toggle DJ cycle |
 |!cycletimer | X | set the maximum DJ cycle time for when cycleguard is enabled |
-|!killtroll | | what all trolls deserve muwahahahah |
 |!locktimer | X | set the maximum time the waitlist can be locked if lockguard is enabled |
 |!logout | | logs out account bot is hosted on |
 |!plugcolor | | sends a link to the greatest script ever! XD |
@@ -36,6 +35,7 @@ Bouncer+
 |!autoskip | | skips songs automatically when they're done (use when the circles-bug happens) |
 |!bouncer+ | | disable bouncer+ |
 |!deletechat | @user | delete all the chats by a certain user ***Currently removed due to bug (awaiting fix)*** |
+|!killtroll | | what all trolls deserve muwahahahah |
 |!lock | | lock the waitlist |
 |!lockdown | | lock down the room: only staff can chat |
 |!maxlength | X | specify the maximum length a song can be when timeguard is enabled |
@@ -103,7 +103,7 @@ User
 |!8ball | (message) | ask the bot a question, the bot will return random variations of a yes or no answer |
 |!autowoot | | links to PlugCubed, the advised script/plugin to use for autowooting |
 |!ba | | explains the Brand Ambassador rank |
-|!candy | (@user) | give a candy to user ***(NOT WORKING!)***|
+|!candy | (@user) | give a candy to user ***NOT WORKING!***|
 |!commands | | gives a link to the commands |
 |!cookie | (@user) | give a cookie to user |
 |!dcinfo | | information about the dc command |
