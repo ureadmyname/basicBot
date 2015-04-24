@@ -235,8 +235,8 @@
             "As I see it, yes.",
             "You may rely on it.",
             "Concentrate and ask again.",
-            "DEEZ NUTS!",
-            "IDGAF!!!"
+            "DEEZ NUTS",
+            "IDGAF"
             "Outlook not so good.",
             "It is decidedly so.",
             "Better not tell you now.",
