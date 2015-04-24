@@ -19,7 +19,6 @@ Manager
 |!cycletimer | X | set the maximum DJ cycle time for when cycleguard is enabled |
 |!locktimer | X | set the maximum time the waitlist can be locked if lockguard is enabled |
 |!logout | | logs out account bot is hosted on |
-|!plugcolor | | sends a link to the greatest script ever! XD |
 |!refresh | | refreshes the browser of whoever runs the bot |
 |!usercmdcd | X | set the cooldown on commands by grey users |
 |!usercommands | | toggle user commands |
@@ -108,6 +107,7 @@ User
 |!cookie | (@user) | give a cookie to user |
 |!dcinfo | | information about the dc command |
 |!dclookup / !dc | | use dclookup on yourself |
+|!djcycleinfo | | explains what the djcycle setting does |
 |!emoji | | a link to a list with emoji's |
 |!eta | | shows how long before you reach the booth |
 |!fav | | remind people to favorite the room |
@@ -120,6 +120,7 @@ User
 |!link | | when the user is the DJ, give a link to the current song |
 |!op | | links to the OverPlayed list (if set in the settings) |
 |!ping | | pong! |
+|!plugcolor | | sends a link to the greatest script ever! XD |
 |!purchase | | returns link to purchase more plug notes |
 |!ref | | I.T support command for plug.dj |
 |!rules | | links to the rules (if set in the settings) |
