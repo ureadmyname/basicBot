@@ -252,7 +252,6 @@
             "Yes, in due time.",
             "My sources say no.",
             "Definitely not.",
-            "You will have to wait.",
             "I have my doubts.",
             "Outlook so so.",
             "Looks good to me!",
