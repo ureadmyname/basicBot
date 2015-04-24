@@ -111,7 +111,7 @@ User
 |!emoji | | a link to a list with emoji's |
 |!eta | | shows how long before you reach the booth |
 |!fav | | remind people to favorite the room |
-|!fb | | links to the room's Facebook page (if set in the settings) |
+|!fb | | links to the room's Facebook page (not set in settings) |
 |!ghostbuster | @user | checks if user is ghosting |
 |!gif | (message) | returns gif (from giphy) related to the tag provided. Returns a random gif if no tags are provided. |
 |!help | | links to an image to help get people started on plug |
@@ -123,11 +123,11 @@ User
 |!plugcolor | | sends a link to the greatest script ever! XD |
 |!purchase | | returns link to purchase more plug notes |
 |!ref | | I.T support command for plug.dj |
-|!rules | | links to the rules (if set in the settings) |
+|!rules | | links to the rules |
 |!shuffle | | show the meaning of Wednesday and Friday |
-|!theme | | links to the room's theme (if set in the settings) |
+|!theme | | links to the room's theme |
 |!troll | | show a trollface |
 |!twitch | | theqtpi twitch link |
-|!website | | links to the room's website (if set in the settings) |
+|!website | | links to the room's website (not set in settings) |
 |!whatissub | | explain what the plug.dj subscription service means |
-|!youtube | | links to the room's youtube page (if set in the settings) |
+|!youtube | | links to the room's youtube page (not set in setting) |
