@@ -118,7 +118,7 @@ User
 |!join | | join the roulette if it's up |
 |!leave | | leave the roulette if you joined |
 |!link | | when the user is the DJ, give a link to the current song |
-|!op | | links to the OverPlayed list (if set in the settings) |
+|!op | | links to the OverPlayed list |
 |!ping | | pong! |
 |!plugcolor | | sends a link to the greatest script ever! XD |
 |!purchase | | returns link to purchase more plug notes |
