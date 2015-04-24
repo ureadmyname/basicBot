@@ -1735,7 +1735,7 @@
                     }
                 }
             },
-                
+
             cookieCommand: {
                 command: 'cookie',
                 rank: 'user',
