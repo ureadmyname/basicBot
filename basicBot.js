@@ -235,6 +235,8 @@
             "As I see it, yes.",
             "You may rely on it.",
             "Concentrate and ask again.",
+            "DEEZ NUTS!",
+            "IDGAF!!!"
             "Outlook not so good.",
             "It is decidedly so.",
             "Better not tell you now.",
@@ -255,7 +257,6 @@
             "Outlook so so.",
             "Looks good to me!",
             "Who knows?",
-            "Looking good!",
             "Probably.",
             "Are you kidding?",
             "Don't bet on it.",
