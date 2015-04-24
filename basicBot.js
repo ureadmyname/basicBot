@@ -242,7 +242,6 @@
             "Yes - definitely.",
             "It is certain.",
             "Cannot predict now.",
-            "DEEZ NUTS!",
             "Most likely.",
             "Ask again later.",
             "My reply is no.",
