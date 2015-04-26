@@ -65,9 +65,9 @@ Bouncer
 
 <table>
 <tr>
-<td width="18%">Theme</td>
+<td width="16%">Theme</td>
 <td width="15%">For use when</td>
-<td width="67%">A song is played that doesn't fit the community theme</td>
+<td width="69%">A song is played that doesn't fit the community theme</td>
 </tr>
 <tr>
 <td>op</td>
