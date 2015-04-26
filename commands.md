@@ -64,11 +64,14 @@ Bouncer
 |!lockskip | (reason) | skip the song and move the dj back up (the position can be set with !lockskippos) |
 <table>
 <tr>
+<td>Theme</td>
+<td>For use when</td>
+<td>A song is played that doesn't fit the community theme.</td>
+</tr>
+<tr>
 <td>a</td>
 <td>a</td>
 <td>a</td>
-<td>a</td>
-<td>February</td>
 <td>a</td>
 </tr>
 </table>
