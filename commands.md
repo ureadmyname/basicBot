@@ -62,20 +62,18 @@ Bouncer
 |!kill | | shut down the bot |
 |!lockguard | | toggle the lockguard |
 |!lockskip | (reason) | skip the song and move the dj back up (the position can be set with !lockskippos) |
-<table border="1">
 <tr>
-<th>Month</th>
-<th>Savings</th>
+<th>a</th>
+<th>a</th>
 </tr>
 <tr>
-<td>January</td>
-<td>$100</td>
+<td>a</td>
+<td>a</td>
 </tr>
 <tr>
 <td>February</td>
-<td>$80</td>
+<td>a</td>
 </tr>
-</table>
 
 | | |	|
 |:------:|:---------:|:--------------------------------------:|
