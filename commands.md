@@ -62,22 +62,6 @@ Bouncer
 |!kill | | shut down the bot |
 |!lockguard | | toggle the lockguard |
 |!lockskip | (reason) | skip the song and move the dj back up (the position can be set with !lockskippos) |
-
-<table>
-<tr>
-<td width="15%">Theme</td>
-<td width="15%">For use when</td>
-<td style="width:190px">A song is played that doesn't fit the community theme</td>
-</tr>
-<tr>
-<td>op</td>
-<td>For use when</td>
-<td>the something of the something</td>
-</tr>
-</table>
-
-| | |	|
-|:------:|:---------:|:--------------------------------------:|
 |!lockskippos | X | set the position to which lockskip moves the dj |
 |!motd | (X)/(message) | when no argument is specified, returns the Message of the Day, when X is specified, the MotD is given every X songs, when "message" is given, it sets the MotD to message |
 |!mute | @user (X) | mute user, for X minutes if X is specified, otherwise for an undefined period |
