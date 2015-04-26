@@ -62,12 +62,21 @@ Bouncer
 |!kill | | shut down the bot |
 |!lockguard | | toggle the lockguard |
 |!lockskip | (reason) | skip the song and move the dj back up (the position can be set with !lockskippos) |
-<LINK REL=StyleSheet HREF="https://rawgit.com/ureadmyname/basicBot/master/commands.css" TYPE="text/css" MEDIA=screen>
-<ul>
-<li> aaa </li>
-<li> aa </li>
-<li> a </li>
-</ul>
+<table border="1">
+<tr>
+<th>Month</th>
+<th>Savings</th>
+</tr>
+<tr>
+<td>January</td>
+<td>$100</td>
+</tr>
+<tr>
+<td>February</td>
+<td>$80</td>
+</tr>
+</table>
+
 | | |	|
 |:------:|:---------:|:--------------------------------------:|
 |!lockskippos | X | set the position to which lockskip moves the dj |
