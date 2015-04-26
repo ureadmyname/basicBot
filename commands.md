@@ -64,8 +64,8 @@ Bouncer
 |!lockskip | (reason) | skip the song and move the dj back up (the position can be set with !lockskippos) |
 <table>
 <tr>
-<th>a</th>
-<th>a</th>
+<tr>a</tr>
+<tr>a</tr>
 </tr>
 <tr>
 <td>a</td>
