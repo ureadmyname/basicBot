@@ -62,16 +62,16 @@ Bouncer
 |!kill | | shut down the bot |
 |!lockguard | | toggle the lockguard |
 |!lockskip | (reason) | skip the song and move the dj back up (the position can be set with !lockskippos) |
+
 <table>
 <tr>
-<td>Theme</td>
+<td width="20%">Theme</td>
 <td>For use when</td>
 <td>A song is played that doesn't fit the community theme.</td>
 </tr>
 <tr>
-<td>a</td>
-<td>a</td>
-<td>a</td>
+<td>op</td>
+<td>For use when</td>
 <td>a</td>
 </tr>
 </table>
