@@ -62,6 +62,7 @@ Bouncer
 |!kill | | shut down the bot |
 |!lockguard | | toggle the lockguard |
 |!lockskip | (reason) | skip the song and move the dj back up (the position can be set with !lockskippos) |
+<table>
 <tr>
 <th>a</th>
 <th>a</th>
@@ -74,6 +75,7 @@ Bouncer
 <td>February</td>
 <td>a</td>
 </tr>
+</table>
 
 | | |	|
 |:------:|:---------:|:--------------------------------------:|
