@@ -66,12 +66,8 @@ Bouncer
 <tr>
 <td>a</td>
 <td>a</td>
-</tr>
-<tr>
 <td>a</td>
 <td>a</td>
-</tr>
-<tr>
 <td>February</td>
 <td>a</td>
 </tr>
