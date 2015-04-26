@@ -10,39 +10,33 @@ Manager
 
 |Command | Arguments |  Description |
 |:------:|:---------:|:--------------------------------------:|
+|!add | @user | add user to the waitlist |
 |!afklimit | X | sets the maximum afk time |
+|!afkremoval | | toggles the afk check |
 |!autofav | | make !fav be displayed on a timer |
 |!autoroulette | | make !roulette be displayed on a timer |
 |!autoshuffle | | make !shuffle be displayed on a timer |
+|!autoskip | | skips songs automatically when they're done (use when the circles-bug happens) |
+|!bouncer+ | | disable/enable bouncer+ |
 |!clearchat | |clears the chat |
 |!cycle | | toggle DJ cycle |
 |!cycletimer | X | set the maximum DJ cycle time for when cycleguard is enabled |
-|!locktimer | X | set the maximum time the waitlist can be locked if lockguard is enabled |
-|!logout | | logs out account bot is hosted on |
-|!refresh | | refreshes the browser of whoever runs the bot |
-|!usercmdcd | X | set the cooldown on commands by grey users |
-|!usercommands | | toggle user commands |
-|!voteskip | (X) | when no argument is specified, returns the current voteskip limit, when X is specified, voteskip limit is updated to the new specified limit |
-
-Bouncer+
---------
-
-|Command | Arguments |  Description |
-|:------:|:---------:|:--------------------------------------:|
-|!add | @user | add user to the waitlist |
-|!afkremoval | | toggles the afk check |
-|!autoskip | | skips songs automatically when they're done (use when the circles-bug happens) |
-|!bouncer+ | | disable bouncer+ |
 |!deletechat | @user | delete all the chats by a certain user ***Currently removed due to bug (awaiting fix)*** |
 |!killtroll | | what all trolls deserve muwahahahah |
 |!lock | | lock the waitlist |
 |!lockdown | | lock down the room: only staff can chat |
+|!locktimer | X | set the maximum time the waitlist can be locked if lockguard is enabled |
+|!logout | | logs out account bot is hosted on |
 |!maxlength | X | specify the maximum length a song can be when timeguard is enabled |
 |!move | @user (X) | moves user to position X on the waitlist, default is position 1 |
+|!refresh | | refreshes the browser of whoever runs the bot |
 |!remove | @user | remove user from the waitlist |
 |!roulette | | start a roulette |
 |!songstats | | toggle song statistics |
 |!unlock | | unlock the waitlist |
+|!usercmdcd | X | set the cooldown on commands by grey users |
+|!usercommands | | toggle user commands |
+|!voteskip | (X) | when no argument is specified, returns the current voteskip limit, when X is specified, voteskip limit is updated to the new specified limit |
 |!welcome | | toggle the welcome message on user join |
 
 Bouncer
