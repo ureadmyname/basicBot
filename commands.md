@@ -62,6 +62,7 @@ Bouncer
 |!kill | | shut down the bot |
 |!lockguard | | toggle the lockguard |
 |!lockskip | (reason) | skip the song and move the dj back up (the position can be set with !lockskippos) |
+<LINK REL=StyleSheet HREF="https://rawgit.com/ureadmyname/basicBot/master/commands.css" TYPE="text/css" MEDIA=screen>
 <ul>
 <li> aaa </li>
 <li> aa </li>
