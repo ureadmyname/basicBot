@@ -67,6 +67,7 @@ Bouncer
 <li> aa </li>
 <li> a </li>
 </ol>
+|Command | Arguments |  Description |
 |:------:|:---------:|:--------------------------------------:|
 |!lockskippos | X | set the position to which lockskip moves the dj |
 |!motd | (X)/(message) | when no argument is specified, returns the Message of the Day, when X is specified, the MotD is given every X songs, when "message" is given, it sets the MotD to message |
