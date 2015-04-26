@@ -67,7 +67,7 @@ Bouncer
 <tr>
 <td width="15.5%">Theme</td>
 <td width="15%">For use when</td>
-<td width="74%">A song is played that doesn't fit the community theme</td>
+<td style="width:100px">A song is played that doesn't fit the community theme</td>
 </tr>
 <tr>
 <td>op</td>
