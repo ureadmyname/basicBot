@@ -65,14 +65,14 @@ Bouncer
 
 <table>
 <tr>
-<td width="16%">Theme</td>
+<td width="15.5%">Theme</td>
 <td width="15%">For use when</td>
-<td width="69%">A song is played that doesn't fit the community theme</td>
+<td width="69.5%">A song is played that doesn't fit the community theme</td>
 </tr>
 <tr>
 <td>op</td>
 <td>For use when</td>
-<td>a</td>
+<td>the something of the something</td>
 </tr>
 </table>
 
