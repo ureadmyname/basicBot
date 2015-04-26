@@ -62,11 +62,11 @@ Bouncer
 |!kill | | shut down the bot |
 |!lockguard | | toggle the lockguard |
 |!lockskip | (reason) | skip the song and move the dj back up (the position can be set with !lockskippos) |
-<ol>
+<ul>
 <li> aaa </li>
 <li> aa </li>
 <li> a </li>
-</ol>
+</ul>
 |Command | Arguments |  Description |
 |:------:|:---------:|:--------------------------------------:|
 |!lockskippos | X | set the position to which lockskip moves the dj |
