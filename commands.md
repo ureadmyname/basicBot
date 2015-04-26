@@ -21,7 +21,7 @@ Manager
 |!clearchat | |clears the chat |
 |!cycle | | toggle DJ cycle |
 |!cycletimer | X | set the maximum DJ cycle time for when cycleguard is enabled |
-|!deletechat | @user | delete all the chats by a certain user ***Currently removed due to bug (awaiting fix)*** |
+|!deletechat | @user | delete all the chats by a certain user ***DOESN'T WORK FOR THE MOMENT*** |
 |!killtroll | | what all trolls deserve muwahahahah |
 |!lock | | lock the waitlist |
 |!lockdown | | lock down the room: only staff can chat |
@@ -121,7 +121,7 @@ User
 |!shuffle | | show the meaning of Wednesday and Friday |
 |!theme | | links to the room's theme |
 |!troll | | show a trollface |
-|!twitch | | theqtpi twitch link |
+|!twitch | | "theqtpi" twitch link |
 |!website | | links to the room's website (not set in settings) |
 |!whatissub | | explain what the plug.dj subscription service means |
 |!youtube | | links to the room's youtube page (not set in setting) |
