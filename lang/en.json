@@ -19,6 +19,7 @@
     "isopen": "/me The roulette is now open! Type !join to participate!",
     "winnerpicked": "/me A winner has been picked! @%%NAME%% to position %%POSITION%%.",
 
+    "prop": "/me %%@NAMEFROM%% says, %%PROP%% to @%%NAMETO%%"
     "ball": "/me %%NAME%%'s question was: \"%%QUESTION%%\" and %%BOTNAME%%'s response is: \"%%RESPONSE%%\"",
 
     "notghosting": "[%%NAME1%%] %%NAME2%% is not ghosting.",
