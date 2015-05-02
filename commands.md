@@ -21,7 +21,7 @@ Manager
 |!clearchat | |clears the chat |
 |!cycle | | toggle DJ cycle |
 |!cycletimer | X | set the maximum DJ cycle time for when cycleguard is enabled |
-|!deletechat | @user | delete all the chats by a certain user ***DOESN'T WORK FOR THE MOMENT*** |
+|!deletechat | @user | delete all the chats by a certain user ***NOT WORKING!*** |
 |!killtroll | | what all trolls deserve muwahahahah |
 |!lock | | lock the waitlist |
 |!lockdown | | lock down the room: only staff can chat |
@@ -84,7 +84,7 @@ Resident DJ
 
 |Command | Arguments |  Description |
 |:------:|:---------:|:--------------------------------------:|
-|!link | | give a link to the current song
+|!link | | give a link to the current song |
 
 
 
@@ -107,7 +107,7 @@ User
 |!fav | | remind people to favorite the room |
 |!fb | | links to the room's Facebook page (not set in settings) |
 |!ghostbuster | @user | checks if user is ghosting |
-|!gif | (message) | returns gif (from giphy) related to the tag provided. Returns a random gif if no tags are provided. |
+|!gif | (message) | returns a gif (from giphy) related to the tag provided, Returns a random gif if no tags are provided |
 |!help | | links to an image to help get people started on plug |
 |!join | | join the roulette if it's up |
 |!leave | | leave the roulette if you joined |
@@ -133,9 +133,11 @@ All Sub-Commands
 |MainCommand | Sub-Command | Description |
 |:------:|:---------:|:--------------------------------------:|
 |!lockskip | crapiplayedthewrongsong | skip your song if you accidentally played the wrong song |
-|!lockskip |  |  |
-|!lockskip |  |  |
-|!lockskip |  |  |
+| | theme | if the song doesn't fit the room theme  |
+| | history | if the song is in the "DJ history" |
+| | sound |  |
+| | nsfw | if the song played contained an NSFW image or sound |
+| | unavailable | if the song is not available for some, most or all users |
 
 Coming Soon... Hop3fully
 -----------------
