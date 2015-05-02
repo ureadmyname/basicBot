@@ -116,7 +116,7 @@ User
 |!ping | | pong! |
 |!plugcolor | | sends a link to the plugcolor script |
 |!purchase | | returns link to purchase more plug notes |
-|!ref | | I.T support command for plug.dj |
+|!ref | | the "I.T" support command for plug.dj |
 |!rules | | links to the rules |
 |!shuffle | | show the meaning of Wednesday and Friday |
 |!theme | | links to the room's theme |
