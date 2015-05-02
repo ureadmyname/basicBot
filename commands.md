@@ -124,7 +124,7 @@ User
 |!twitch | | "theqtpi" twitch link |
 |!website | | links to the room's website (not set in settings) |
 |!whatissub | | explain what the plug.dj subscription service means |
-|!youtube | | links to the room's youtube page (not set in setting) |
+|!youtube | | links to the room's youtube page (not set in settings) |
 
 
 All Sub-Commands
@@ -132,11 +132,12 @@ All Sub-Commands
 
 |MainCommand | Sub-Command | Description |
 |:------:|:---------:|:--------------------------------------:|
-|!example | ... | the things |
+|!lockskip | crapiplayedthewrongsong | skip your song if you accidentally played the wrong song |
 
 Coming Soon... Hop3fully
 -----------------
 
 |Command | Arguments | Description |
 |:------:|:---------:|:--------------------------------------:|
-|!example | ... | the things |
+|!props | (@user) | give "props" to someone for playing a great song |
+|!countdown | X | make a countdown to a certain event |
