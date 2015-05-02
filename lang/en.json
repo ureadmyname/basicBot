@@ -20,7 +20,6 @@
     "winnerpicked": "/me A winner has been picked! @%%NAME%% to position %%POSITION%%.",
 
     "prop": "/me %%@NAMEFROM%% says, %%PROP%% to @%%NAMETO%%"
-    "ball": "/me %%NAME%%'s question was: \"%%QUESTION%%\" and %%BOTNAME%%'s response is: \"%%RESPONSE%%\"",
 
     "notghosting": "[%%NAME1%%] %%NAME2%% is not ghosting.",
     "ghosting": "[%%NAME1%%] %%NAME2%% is either ghosting or not here.",
