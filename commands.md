@@ -133,6 +133,9 @@ All Sub-Commands
 |MainCommand | Sub-Command | Description |
 |:------:|:---------:|:--------------------------------------:|
 |!lockskip | crapiplayedthewrongsong | skip your song if you accidentally played the wrong song |
+|!lockskip |  |  |
+|!lockskip |  |  |
+|!lockskip |  |  |
 
 Coming Soon... Hop3fully
 -----------------
