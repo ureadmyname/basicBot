@@ -125,3 +125,10 @@ User
 |!website | | links to the room's website (not set in settings) |
 |!whatissub | | explain what the plug.dj subscription service means |
 |!youtube | | links to the room's youtube page (not set in setting) |
+
+
+All Sub-Commands
+-----------------
+
+|MainCommand | Sub-Command | Description |
+|:------:|:---------:|:--------------------------------------:|
