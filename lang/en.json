@@ -8,8 +8,8 @@
     "online": "/me %%BOTNAME%% v%%VERSION%% online!",
 
 
-    "welcome": "/me Everybody Welcome %%NAME%%",
-    "welcomeback": "/me Everybody Welcome back, %%NAME%%",
+    "welcome": "/me Welcome %%NAME%%",
+    "welcomeback": "/me Welcome back, %%NAME%%",
     "songknown": "/me @%%NAME%%, this song is in the DJ history.",
     "timelimit": "/me @%%NAME%%, your song is longer than %%MAXLENGTH%% minutes, you need permission to play longer songs.",
     "permissionownsong": "/me :up: @%%NAME%% has permission to play their own production!",
@@ -19,7 +19,7 @@
     "isopen": "/me The roulette is now open! Type !join to participate!",
     "winnerpicked": "/me A winner has been picked! @%%NAME%% to position %%POSITION%%.",
 
-    "prop": "/me %%@NAMEFROM%% says, %%PROP%% to @%%NAMETO%%"
+    "ball": "/me %%NAME%%'s question was: \"%%QUESTION%%\" and %%BOTNAME%%'s response is: \"%%RESPONSE%%\"",
 
     "notghosting": "[%%NAME1%%] %%NAME2%% is not ghosting.",
     "ghosting": "[%%NAME1%%] %%NAME2%% is either ghosting or not here.",
@@ -93,6 +93,7 @@
     "maximumafktimeset": "/me [@%%NAME%%] Maximum afk duration set to %%TIME%% minutes.",
     "afkstatusreset": "/me [@%%NAME%%] Reset the afk status of @%%USERNAME%%.",
     "inactivefor": "/me [@%%NAME%%] @%%USERNAME%% has been inactive for %%TIME%%.",
+    "inactivelonger": "/me [@%%NAME%%] @%%USERNAME%% has been inactive longer than %%BOTNAME%%'s been online.",
     "autowoot": "/me We recommend PlugCubed for autowooting: http://plugcubed.net/",
     "brandambassador": "/me A Brand Ambassador is the voice of the plug.dj users. They promote events, engage the community and share the plug.dj message around the world. For more info: https://plug.dj/ba",
     "bouncerplusrank": "/me [@%%NAME%%] You have to be manager or up to enable Bouncer+.",
