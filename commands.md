@@ -132,3 +132,11 @@ All Sub-Commands
 
 |MainCommand | Sub-Command | Description |
 |:------:|:---------:|:--------------------------------------:|
+|!example | ... | the things |
+
+Coming Soon... Hop3fully
+-----------------
+
+|Command | Arguments | Description |
+|:------:|:---------:|:--------------------------------------:|
+|!example | ... | the things |
