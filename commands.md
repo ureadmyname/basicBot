@@ -15,6 +15,7 @@ Manager
 |!afkremoval | | toggles the afk check |
 |!autofav | | make !fav be displayed on a timer |
 |!autoroulette | | make !roulette be displayed on a timer |
+|!autorules | | make !rules be displayed on a timer |
 |!autoshuffle | | make !shuffle be displayed on a timer |
 |!autoskip | | skips songs automatically when they're done (use when the circles-bug happens) |
 |!bouncer+ | | disable/enable bouncer+ |
