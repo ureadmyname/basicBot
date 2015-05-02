@@ -114,7 +114,7 @@ User
 |!link | | when the user is the DJ, give a link to the current song |
 |!op | | links to the OverPlayed list |
 |!ping | | pong! |
-|!plugcolor | | sends a link to the greatest script ever! XD |
+|!plugcolor | | sends a link to the plugcolor script |
 |!purchase | | returns link to purchase more plug notes |
 |!ref | | I.T support command for plug.dj |
 |!rules | | links to the rules |
