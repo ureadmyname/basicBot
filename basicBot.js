@@ -234,7 +234,7 @@
             "YOLO.",
             "The #dolphingang would know, i don't.",
             "IDC, at all.",
-            "Deez nuts.",
+            "DEEZ NUTS!",
             "I.D.G.A.F.",
             "Yer, something like that.",
             "Reply hazy, try again.",
