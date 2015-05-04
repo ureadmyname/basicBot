@@ -229,6 +229,11 @@
             ball: [
             "Signs point to yes.",
             "Yes.",
+            "Yes.",
+            "Yes.",
+            "Yes.",
+            "Yes.",
+            "Yes.",
             "Reply hazy, try again.",
             "Without a doubt.",
             "My sources say no.",
