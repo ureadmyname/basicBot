@@ -118,6 +118,7 @@ User
 |!plugcolor | | sends a link to the plugcolor script |
 |!purchase | | returns link to purchase more plug notes |
 |!ref | | the "I.T" support command for plug.dj |
+|!rouletteinfo | | explains the roulette to people who don't know what it is |
 |!rules | | links to the rules |
 |!shuffle | | show the meaning of Wednesday and Friday |
 |!theme | | links to the room's theme |
