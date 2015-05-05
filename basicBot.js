@@ -265,8 +265,8 @@
             "I.D.G.A.F.",
             "Who knows?",
             "Probably.",
-            "STFU.",
-            "YOLO."
+            "S.T.F.U.",
+            "Y.O.L.O."
             ],
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
