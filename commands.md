@@ -125,7 +125,7 @@ User
 |!troll | | show a trollface |
 |!twitch | | "theqtpi" twitch link |
 |!website | | links to the room's website (not set in settings) |
-|!whatissub | | explain what the plug.dj subscription service means |
+|!subinfo | | explain what the plug.dj subscription service means |
 |!youtube | | links to the room's youtube page (not set in settings) |
 
 
