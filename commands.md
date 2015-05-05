@@ -109,7 +109,7 @@ User
 |!fb | | links to the room's Facebook page (not set in settings) |
 |!ghostbuster | @user | checks if user is ghosting |
 |!gif | (message) | returns a gif (from giphy) related to the tag provided, Returns a random gif if no tags are provided |
-|!help | | links to an image to help get people started on plug |
+|!help | | links to an image to help get people started on plug **NOT AVAILABLE FOR THE MOMENT**|
 |!join | | join the roulette if it's up |
 |!leave | | leave the roulette if you joined |
 |!link | | when the user is the DJ, give a link to the current song |
