@@ -228,7 +228,7 @@
             ],
             ball: [
             "I would answer but qtbot is drunk right now, shhhh.",
-            "The #dolphingang would know, i don't.",
+            "The #dolphingang would know, I don't.",
             "Concentrate and ask again.",
             "Yer, something like that.",
             "Better not tell you now.",
