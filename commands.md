@@ -95,6 +95,7 @@ User
 |Command | Arguments |  Description |
 |:------:|:---------:|:--------------------------------------:|
 |!8ball | (message) | ask the bot a question, the bot will return random variations of a yes or no answer |
+|!allbotstuff | | a link to everything to do with the bot |
 |!autowoot | | links to PlugCubed, the advised script/plugin to use for autowooting |
 |!ba | | explains the Brand Ambassador rank |
 |!candy | (@user) | give a candy to user ***NOT WORKING!***|
@@ -118,6 +119,7 @@ User
 |!plugcolor | | sends a link to the plugcolor script |
 |!purchase | | returns link to purchase more plug notes |
 |!ref | | the "I.T" support command for plug.dj |
+|!responses | | link to all the possible 8ball responses |
 |!rouletteinfo | | explains the roulette to people who don't know what it is |
 |!rules | | links to the rules |
 |!shuffle | | show the meaning of Wednesday and Friday |
