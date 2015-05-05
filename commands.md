@@ -5,8 +5,8 @@ X specifies a number
 Arguments between ( ) are optional
 
 
-Manager
--------
+Manager+
+--------
 
 |Command | Arguments |  Description |
 |:------:|:---------:|:--------------------------------------:|
