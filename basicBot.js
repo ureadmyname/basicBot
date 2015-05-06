@@ -1749,7 +1749,7 @@
                     }
                 }
             },
-           /*
+
             propCommand: {
                 command: 'props',
                 rank: 'user',
@@ -1792,7 +1792,7 @@
                         }
                     }
                 }
-            }, */
+            }, 
 
             cookieCommand: {
                 command: 'cookie',
