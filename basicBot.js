@@ -1749,7 +1749,7 @@
                     }
                 }
             },
-         /*   
+           
             propCommand: {
                 command: 'props',
                 rank: 'user',
@@ -1764,11 +1764,14 @@
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        var msg = chat.message;
-                        var space = msg.indexOf(' ');
- */
-            
+                        else {
+                           var name = msg.substring(space + 2);
+                           var user = basicBot.userUtilities.lookupUserName(name);
+return API.sendChat(subChat(basicBot.chat.prop, {nameto: user.username, namefrom: chat.un, prop: this.getprop()}));
+                        }
+                    }
+                },
+
             cookieCommand: {
                 command: 'cookie',
                 rank: 'user',
