@@ -104,6 +104,7 @@ User
 |!dcinfo | | information about the dc command |
 |!dclookup / !dc | | use dclookup on yourself |
 |!djcycleinfo | | explains what the djcycle setting does |
+|!eightresponses | | link to all the possible 8ball responses |
 |!emoji | | a link to a list with emoji's |
 |!eta | | shows how long before you reach the booth |
 |!fav | | remind people to favorite the room |
@@ -119,12 +120,11 @@ User
 |!plugcolor | | sends a link to the plugcolor script |
 |!props | (@user) | give "props" to someone for playing a great song |
 |!ref | | the "I.T" support command for plug.dj |
-|!responses | | link to all the possible 8ball responses |
 |!rouletteinfo | | explains the roulette to people who don't know what it is |
 |!rules | | links to the rules |
 |!shuffle | | show the meaning of Wednesday and Friday |
 |!theme | | links to the room's theme |
-|!theprops | | links to all the props there are |
+|!tehproops | | links to all the props there are |
 |!troll | | show a trollface |
 |!twitch | | "theqtpi" twitch link |
 |!website | | links to the room's website (not set in settings) |
