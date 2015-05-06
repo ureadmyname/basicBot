@@ -1503,10 +1503,17 @@
                         var lastActive = basicBot.userUtilities.getLastActivity(user);
                         var inactivity = Date.now() - lastActive;
                         var time = basicBot.roomUtilities.msToStr(inactivity);
+                        var launchT = basicBot.room.roomstats.launchTime;
+                        var durationOnline = Date.now() - launchT;
+                        if (inactivity == durationOnline){
+                            API.sendChat(subChat(basicBot.chat.inactivelonger, {botname: basicBot.settings.botName, name: chat.un, username: name}));
+                        } else {
                         API.sendChat(subChat(basicBot.chat.inactivefor, {name: chat.un, username: name, time: time}));
+                        }
                     }
                 }
             },
+
 
             autodisableCommand: {
                 command: 'autodisable',
