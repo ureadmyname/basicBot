@@ -107,7 +107,7 @@
     "eatprop": "/me ",
     "nouserprop": "/em doesn't see %%NAME%% in this room.",
     "selfprop": "/me @%%NAME%%, Giving props to yourself, that's a bit greedy. How about giving other people props!",
-    "prop": "/me @%%NAMEFROM%% says %%PROP%% to @%%NAMETO%%",
+    "prop": "/me [%%BOTNAME%%]: @%%NAMEFROM%% says %%PROP%% to @%%NAMETO%%",
     "cycleguardtime": "/me [@%%NAME%%] The cycleguard is set to %%TIME%% minute(s).",
     "dclookuprank": "/me [@%%NAME%%] Only bouncers and above can do a lookup for others.",
     "emojilist": "/me Emoji list: %%LINK%%",
