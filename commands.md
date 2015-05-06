@@ -124,6 +124,7 @@ User
 |!rules | | links to the rules |
 |!shuffle | | show the meaning of Wednesday and Friday |
 |!theme | | links to the room's theme |
+|!theprops | | links to all the props there are |
 |!troll | | show a trollface |
 |!twitch | | "theqtpi" twitch link |
 |!website | | links to the room's website (not set in settings) |
