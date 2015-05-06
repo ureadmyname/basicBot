@@ -119,7 +119,7 @@ User
 |!plugcolor | | sends a link to the plugcolor script |
 |!props | (@user) | give "props" to someone for playing a great song |
 |!ref | | the "I.T" support command for plug.dj |
-|!8responses | | link to all the possible 8ball responses |
+|!responses | | link to all the possible 8ball responses |
 |!rouletteinfo | | explains the roulette to people who don't know what it is |
 |!rules | | links to the rules |
 |!shuffle | | show the meaning of Wednesday and Friday |
