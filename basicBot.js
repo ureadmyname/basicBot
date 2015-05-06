@@ -1755,7 +1755,13 @@
                 rank: 'user',
                 type: 'startsWith',
                 props: ['great song!',
-                    'amazing song!'
+                    'amazing song!',
+                    'love this song <3',
+                    'This song = 11/10 IGN!!!',
+                    'this track is amazing.',
+                    'awesometastic!',
+                    'awesome track!!!',
+                    'excellent tune.'
                 ],
                 getProp: function () {
                     var p = Math.floor(Math.random() * this.props.length);
