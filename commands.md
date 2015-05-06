@@ -24,6 +24,7 @@ Manager+
 |!cycletimer | X | set the maximum DJ cycle time for when cycleguard is enabled |
 |!deletechat | @user | delete all the chats by a certain user ***NOT WORKING!*** |
 |!killtroll | | what all trolls deserve muwahahahah |
+|!language | (language) | specify the language you would like the bot to use |
 |!lock | | lock the waitlist |
 |!lockdown | | lock down the room: only staff can chat |
 |!locktimer | X | set the maximum time the waitlist can be locked if lockguard is enabled |
