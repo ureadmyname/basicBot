@@ -116,7 +116,6 @@ User
 |!op | | links to the OverPlayed list |
 |!ping | | pong! |
 |!plugcolor | | sends a link to the plugcolor script |
-|!purchase | | returns link to purchase more plug notes |
 |!ref | | the "I.T" support command for plug.dj |
 |!responses | | link to all the possible 8ball responses |
 |!rouletteinfo | | explains the roulette to people who don't know what it is |
