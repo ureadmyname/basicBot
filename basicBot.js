@@ -1781,7 +1781,7 @@
                                 return API.sendChat(subChat(basicBot.chat.selfprop, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.prop, {nameto: user.username, namefrom: chat.un, peop: this.getProp()}));
+                                return API.sendChat(subChat(basicBot.chat.prop, {nameto: user.username, namefrom: chat.un, prop: this.getProp()}));
                             }
                         }
                     }
