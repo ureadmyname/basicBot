@@ -117,6 +117,7 @@ User
 |!op | | links to the OverPlayed list |
 |!ping | | pong! |
 |!plugcolor | | sends a link to the plugcolor script |
+|!props | (@user) | give "props" to someone for playing a great song |
 |!ref | | the "I.T" support command for plug.dj |
 |!responses | | link to all the possible 8ball responses |
 |!rouletteinfo | | explains the roulette to people who don't know what it is |
@@ -147,6 +148,5 @@ Coming Soon... Hop3fully
 
 |Command | Arguments | Description |
 |:------:|:---------:|:--------------------------------------:|
-|!props | (@user) | give "props" to someone for playing a great song |
 |!countdown | X | make a countdown to a certain event |
 |!candy | (@user) | give a candy to user |
