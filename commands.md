@@ -99,6 +99,7 @@ User
 |!allbotstuff | | a link to everything to do with the bot |
 |!autowoot | | links to PlugCubed, the advised script/plugin to use for autowooting |
 |!ba | | explains the Brand Ambassador rank |
+|!candy | (@user) | give a candy to user |
 |!commands | | gives a link to the commands |
 |!cookie | (@user) | give a cookie to user |
 |!dcinfo | | information about the dc command |
@@ -150,4 +151,3 @@ Coming Soon... Hop3fully
 |Command | Arguments | Description |
 |:------:|:---------:|:--------------------------------------:|
 |!countdown | X | make a countdown to a certain event |
-|!candy | (@user) | give a candy to user |
