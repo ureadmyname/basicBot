@@ -1710,8 +1710,22 @@
                     'A Jollyrancher',
                     'A Twizzler',
                     'A Tootsie Rool',
-                    'One Jelly Belly',
-                    'A KitKat'
+                    'A Packet Of Jelly Bellys',
+                    'A KitKat',
+                    'A Milkyway Bar',
+                    'A Rolo Bar',
+                    'A Packet Of Milk Duds',
+                    'A Mounds Bar',
+                    'A Charleston Chew',
+                    'A Raisinets Packet',
+                    'A Nutrageous Bar',
+                    'A Baby Ruth',
+                    'A PayDay Bar',
+                    'A Heath Bar',
+                    "A Reeses Peanut butter cup",
+                    "A Packet Of Hershey's Caramels",
+                    'An Andes Thin Mint',
+                    'A Mr Goodbar'
                 ],
                 getCandy: function () {
                     var ca = Math.floor(Math.random() * this.candies.length);
