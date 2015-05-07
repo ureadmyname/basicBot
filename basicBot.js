@@ -1711,11 +1711,11 @@
                     'A Twizzler',
                     'A Tootsie Rools',
                     'One Jelly Belly',
-                    'A KitKat
+                    'A KitKat'
                 ],
                 getCandy: function () {
-                    var c = Math.floor(Math.random() * this.camdies.length);
-                    return this.candies[c];
+                    var ca = Math.floor(Math.random() * this.camdies.length);
+                    return this.candies[ca];
                 },
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
