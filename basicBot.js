@@ -1714,7 +1714,7 @@
                     'A KitKat'
                 ],
                 getCandy: function () {
-                    var ca = Math.floor(Math.random() * this.camdies.length);
+                    var ca = Math.floor(Math.random() * this.candies.length);
                     return this.candies[ca];
                 },
                 functionality: function (chat, cmd) {
