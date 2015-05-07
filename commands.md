@@ -99,9 +99,9 @@ User
 |!allbotstuff | | a link to everything to do with the bot |
 |!autowoot | | links to PlugCubed, the advised script/plugin to use for autowooting |
 |!ba | | explains the Brand Ambassador rank |
-|!candy | (@user) | give a candy to user |
+|!candy | (@user) | give a random candy to a user |
 |!commands | | gives a link to the commands |
-|!cookie | (@user) | give a cookie to user |
+|!cookie | (@user) | give a cookie to someone |
 |!dcinfo | | information about the dc command |
 |!dclookup / !dc | | use dclookup on yourself |
 |!djcycleinfo | | explains what the djcycle setting does |
