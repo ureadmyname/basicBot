@@ -111,7 +111,7 @@
     "eatcandy": "/me eats a candy.",
     "nousercandy": "/em doesn't see %%NAME%% in this room.",
     "selfcandy": "/me @%%NAME%%, Giving candies to yourself, How about giving other people candies :).",
-    "candy": "/me [qtbot]: @%%NAMEFROM%% gives @%%NAMETO%%, %%CANDY%%!",
+    "candy": "/me [qtbot]: @%%NAMEFROM%% gives @%%NAMETO%%, %%CANDY%% !",
     "cycleguardtime": "/me [@%%NAME%%] The cycleguard is set to %%TIME%% minute(s).",
     "dclookuprank": "/me [@%%NAME%%] Only bouncers and above can do a lookup for others.",
     "emojilist": "/me Emoji list: %%LINK%%",
