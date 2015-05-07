@@ -1704,18 +1704,14 @@
                 command: 'candy',
                 rank: 'user',
                 type: 'startsWith',
-                candies: ['snickers bar',
-                    'm&m's',
-                    'm&m's',
-                    'm&m's',
-                    'm&m's',
-                    'm&m's',
-                    'm&m's',
-                    'm&m's',
-                    'm&m's',
-                    'm&m's',
-                    'm&m's',
-                    'skittles'
+                candies: ['A Snickers Bar',
+                    "A Packet Of M&M's",
+                    'A Packet Of Sourpatch Kids',
+                    'A Jollyrancher',
+                    'A Twizzler',
+                    'A Tootsie Rools',
+                    'One Jelly Belly',
+                    'A KitKat
                 ],
                 getCandy: function () {
                     var c = Math.floor(Math.random() * this.camdies.length);
