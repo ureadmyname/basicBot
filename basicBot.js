@@ -1709,7 +1709,7 @@
                     'A Packet Of Sourpatch Kids',
                     'A Jollyrancher',
                     'A Twizzler',
-                    'A Tootsie Rools',
+                    'A Tootsie Rool',
                     'One Jelly Belly',
                     'A KitKat'
                 ],
