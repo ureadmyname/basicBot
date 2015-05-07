@@ -108,7 +108,7 @@
     "nouserprop": "/em [qtbot] doesn't see %%NAME%% in this room.",
     "selfprop": "/me [qtbot] @%%NAME%%, Giving props to yourself, that's a bit greedy. How about giving other people props!",
     "prop": "/me [qtbot]: @%%NAMEFROM%% says %%PROP%% to, @%%NAMETO%%",
-    "eatcandy": "/me [qtbot] @%%NAMEFROM%% eats a candy.",
+    "eatcandy": "/me [qtbot] eats a candy.",
     "nousercandy": "/em [qtbot] doesn't see %%NAME%% in this room.",
     "selfcandy": "/me [qtbot] @%%NAME%%, Giving candies to yourself, How about giving other people candies :).",
     "candy": "/me [qtbot]: @%%NAMEFROM%% gives @%%NAMETO%%, %%CANDY%%!",
