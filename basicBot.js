@@ -1699,6 +1699,54 @@
                     }
                 }
             },
+            
+            candyCommand: {
+                command: 'candy',
+                rank: 'user',
+                type: 'startsWith',
+                candies: ['snickers bar',
+                    'm&m's',
+                    'm&m's',
+                    'm&m's',
+                    'm&m's',
+                    'm&m's',
+                    'm&m's',
+                    'm&m's',
+                    'm&m's',
+                    'm&m's',
+                    'm&m's',
+                    'skittles'
+                ],
+                getCandy: function () {
+                    var c = Math.floor(Math.random() * this.camdies.length);
+                    return this.candies[c];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(basicBot.chat.eatcandy);
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = basicBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(basicBot.chat.nousercandy, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(basicBot.chat.selfcandy, {name: name}));
+                            }
+                            else {
+                                return API.sendChat(subChat(basicBot.chat.candy, {nameto: user.username, namefrom: chat.un, candy: this.getCandy()}));
+                            }
+                        }
+                    }
+                }
+            },
 
             clearchatCommand: {
                 command: 'clearchat',
@@ -1749,50 +1797,6 @@
                     }
                 }
             },
-
-            propCommand: {
-                command: 'props',
-                rank: 'user',
-                type: 'startsWith',
-                props: ['"Great song."',
-                    '"Amazing song."',
-                    '"Love this song <3"',
-                    '"This song = 11/10 IGN."',
-                    '"This track is amazing."',
-                    '"Awesometastic."',
-                    '"Awesome track."',
-                    '"Excellent tune."'
-                ],
-                getProp: function () {
-                    var p = Math.floor(Math.random() * this.props.length);
-                    return this.props[p];
-                },
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        var msg = chat.message;
-                        var space = msg.indexOf(' ');
-                        if (space === -1) {
-                            API.sendChat(basicBot.chat.eatprop);
-                            return false;
-                        }
-                        else {
-                            var name = msg.substring(space + 2);
-                            var user = basicBot.userUtilities.lookupUserName(name);
-                            if (user === false || !user.inRoom) {
-                                return API.sendChat(subChat(basicBot.chat.nouserprop, {name: name}));
-                            }
-                            else if (user.username === chat.un) {
-                                return API.sendChat(subChat(basicBot.chat.selfprop, {name: name}));
-                            }
-                            else {
-                                return API.sendChat(subChat(basicBot.chat.prop, {nameto: user.username, namefrom: chat.un, prop: this.getProp()}));
-                            }
-                        }
-                    }
-                }
-            }, 
 
             cookieCommand: {
                 command: 'cookie',
@@ -2705,6 +2709,50 @@
                     }
                 }
             },
+
+            propCommand: {
+                command: 'props',
+                rank: 'user',
+                type: 'startsWith',
+                props: ['"Great song."',
+                    '"Amazing song."',
+                    '"Love this song <3"',
+                    '"This song = 11/10 IGN."',
+                    '"This track is amazing."',
+                    '"Awesometastic."',
+                    '"Awesome track."',
+                    '"Excellent tune."'
+                ],
+                getProp: function () {
+                    var p = Math.floor(Math.random() * this.props.length);
+                    return this.props[p];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(basicBot.chat.eatprop);
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = basicBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(basicBot.chat.nouserprop, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(basicBot.chat.selfprop, {name: name}));
+                            }
+                            else {
+                                return API.sendChat(subChat(basicBot.chat.prop, {nameto: user.username, namefrom: chat.un, prop: this.getProp()}));
+                            }
+                        }
+                    }
+                }
+            }, 
 
             pingCommand: {
                 command: 'ping',
