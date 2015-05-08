@@ -115,7 +115,7 @@
     "eatshots": "/me [qtbot] takes a shot.",
     "nousershots": "/em [qtbot] doesn't see %%NAME%% in this room.",
     "selfshots": "/me [qtbot] @%%NAME%%, Buying yourself a shot, How about you buy a round for once :)",
-    "shots": "/me [qtbot]: @%%NAMEFROM%% buys @%%NAMETO%% a shot of, %%SHOTS%%!",
+    "shots": "/me [qtbot]: @%%NAMEFROM%% buys @%%NAMETO%% a shot, '%%SHOTS%%!'",
     "cycleguardtime": "/me [@%%NAME%%] The cycleguard is set to %%TIME%% minute(s).",
     "dclookuprank": "/me [@%%NAME%%] Only bouncers and above can do a lookup for others.",
     "emojilist": "/me Emoji list: %%LINK%%",
