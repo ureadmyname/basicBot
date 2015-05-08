@@ -1709,7 +1709,7 @@
                     'A Packet Of Sourpatch Kids',
                     'A Jollyrancher',
                     'A Twizzler',
-                    'A Tootsie Rool',
+                    'A Tootsie Roll',
                     'A Packet Of Jelly Bellys',
                     'A KitKat',
                     'A Milkyway Bar',
@@ -1722,10 +1722,12 @@
                     'A Baby Ruth',
                     'A PayDay Bar',
                     'A Heath Bar',
-                    "A Reeses Peanut butter cup",
+                    "A Reeses Peanut Butter Cup",
                     "A Packet Of Hershey's Caramels",
                     'An Andes Thin Mint',
-                    'A Mr Goodbar'
+                    'A Mr Goodbar',
+                    'A Packet Of',
+                    'A Chokito Bar'
                 ],
                 getCandy: function () {
                     var ca = Math.floor(Math.random() * this.candies.length);
@@ -1803,47 +1805,6 @@
                         else {
                             basicBot.settings.cmdDeletion = !basicBot.settings.cmdDeletion;
                             API.sendChat(subChat(basicBot.chat.toggleon, {name: chat.un, 'function': basicBot.chat.cmddeletion}));
-                        }
-                    }
-                }
-            },
-
-shotsCommand: {
-                command: 'shots',
-                rank: 'user',
-                type: 'startsWith',
-                shots: ['Whiskey',
-                    'Smirnoff',
-                    'Jim Beam',
-                    'Jack Daniels',
-                    'Johnny Walker'
-                ],
-                getShots: function () {
-                    var sho = Math.floor(Math.random() * this.shots.length);
-                    return this.shots[sho];
-                },
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        var msg = chat.message;
-                        var space = msg.indexOf(' ');
-                        if (space === -1) {
-                            API.sendChat(basicBot.chat.eatshot);
-                            return false;
-                        }
-                        else {
-                            var name = msg.substring(space + 2);
-                            var user = basicBot.userUtilities.lookupUserName(name);
-                            if (user === false || !user.inRoom) {
-                                return API.sendChat(subChat(basicBot.chat.nousershots, {name: name}));
-                            }
-                            else if (user.username === chat.un) {
-                                return API.sendChat(subChat(basicBot.chat.selfshots, {name: name}));
-                            }
-                            else {
-                                return API.sendChat(subChat(basicBot.chat.shots, {nameto: user.username, namefrom: chat.un, shots: this.getShots()}));
-                            }
                         }
                     }
                 }
@@ -2948,6 +2909,47 @@ shotsCommand: {
                         var mehs = basicBot.room.roomstats.totalMehs;
                         var grabs = basicBot.room.roomstats.totalCurates;
                         API.sendChat(subChat(basicBot.chat.sessionstats, {name: from, woots: woots, mehs: mehs, grabs: grabs}));
+                    }
+                }
+            },
+            
+            shotsCommand: {
+                command: 'shots',
+                rank: 'user',
+                type: 'startsWith',
+                shots: ['Whiskey',
+                    'Smirnoff',
+                    'Jim Beam',
+                    'Jack Daniels',
+                    'Johnny Walker'
+                ],
+                getShots: function () {
+                    var sho = Math.floor(Math.random() * this.shots.length);
+                    return this.shots[sho];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(basicBot.chat.eatshot);
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = basicBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(basicBot.chat.nousershots, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(basicBot.chat.selfshots, {name: name}));
+                            }
+                            else {
+                                return API.sendChat(subChat(basicBot.chat.shots, {nameto: user.username, namefrom: chat.un, shots: this.getShots()}));
+                            }
+                        }
                     }
                 }
             },
