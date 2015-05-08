@@ -1726,7 +1726,7 @@
                     "A Packet Of Hershey's Caramels",
                     'An Andes Thin Mint',
                     'A Mr Goodbar',
-                    'A Packet Of',
+                    'A Packet Of Tim Tams',
                     'A Chokito Bar'
                 ],
                 getCandy: function () {
