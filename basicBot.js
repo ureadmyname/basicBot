@@ -2917,11 +2917,18 @@
                 command: 'shots',
                 rank: 'user',
                 type: 'startsWith',
-                shots: ['Whiskey',
+                shots: ['Lemon Drop',
                     'Smirnoff',
                     'Jim Beam',
                     'Jack Daniels',
-                    'Johnny Walker'
+                    'Johnny Walker',
+                    'Jager Bomb',
+                    'Tequila',
+                    'Cement Mixer',
+                    'Jell-O-Shot',
+                    'Liquid Cocaine',
+                    'Redheaded Slut',
+                    'Slippery Nipple'
                 ],
                 getShots: function () {
                     var sho = Math.floor(Math.random() * this.shots.length);
