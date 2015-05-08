@@ -122,6 +122,7 @@ User
 |!ref | | the "I.T" support command for plug.dj |
 |!rouletteinfo | | explains the roulette to people who don't know what it is |
 |!rules | | links to the rules |
+|!shots | (@user) | give someone a shot |
 |!shuffle | | show the meaning of Wednesday and Friday |
 |!theme | | links to the room's theme |
 |!troll | | show a trollface |
