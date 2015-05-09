@@ -1727,7 +1727,19 @@
                     'An Andes Thin Mint',
                     'A Mr Goodbar',
                     'A Packet Of Tim Tams',
-                    'A Chokito Bar'
+                    'A Chokito Bar',
+                    'An Aero Bar',
+                    'A Bounty Bar',
+                    'An Almond Joy Bar',
+                    'A Butterfinger Bar',
+                    'A Dove Chocolate Bar',
+                    'A Hershey Almond Toffee Bar',
+                    'A Kinder Bueno',
+                    'A Lindt Chocolate Bar',
+                    'A Mars Bar',
+                    'A Twix Bar',
+                    'A Toblerone',
+                    'A Wonka Bar'
                 ],
                 getCandy: function () {
                     var ca = Math.floor(Math.random() * this.candies.length);
@@ -2719,7 +2731,8 @@
                     '"This track is amazing."',
                     '"Awesometastic."',
                     '"Awesome track."',
-                    '"Excellent tune."'
+                    '"Excellent tune."',
+                    '"Nice Play."'
                 ],
                 getProp: function () {
                     var p = Math.floor(Math.random() * this.props.length);
@@ -2914,7 +2927,16 @@
                     'Jell-O-Shot',
                     'Liquid Cocaine',
                     'Redheaded Slut',
-                    'Slippery Nipple'
+                    'Slippery Nipple',
+                    'B-52',
+                    'Black Rose',
+                    'Fireball',
+                    'Grasshopper',
+                    'Irish Car Bomb',
+                    'Kamikaze',
+                    'Melon Ball',
+                    'Sammy Jager',
+                    'Tequila Slammer'
                 ],
                 getShots: function () {
                     var sho = Math.floor(Math.random() * this.shots.length);
