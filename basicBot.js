@@ -1879,6 +1879,57 @@
                 }
             },
 
+fortuneCommand: {
+                command: 'fortune',
+                rank: 'user',
+                type: 'startsWith',
+                fortunes: ['gives you a fortune cookie. It reads "Why aren\'t you working on any projects?"',
+                    'gives you a fortune cookie. It reads "Give that special someone a compliment"',
+                    'gives you a fortune cookie. It reads "Take a risk!"',
+                    'gives you a fortune cookie. It reads "Go outside."',
+                    'gives you a fortune cookie. It reads "Don\'t forget to eat your veggies!"',
+                    'gives you a fortune cookie. It reads "Do you even lift?"',
+                    'gives you a fortune cookie. It reads "m808 pls"',
+                    'gives you a fortune cookie. It reads "If you move your hips, you\'ll get all the ladies."',
+                    'gives you a fortune cookie. It reads "I love you."',
+                    'gives you a Golden Cookie. You can\'t eat it because it is made of gold. Dammit.',
+                    'gives you an Oreo cookie with a glass of milk!',
+                    'gives you a rainbow cookie made with love :heart:',
+                    'gives you an old cookie that was left out in the rain, it\'s moldy.',
+                    'bakes you fresh cookies, it smells amazing.'
+                ],
+                getFortune: function () {
+                    var f = Math.floor(Math.random() * this.fortunes.length);
+                    return this.fortunes[f];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(basicBot.chat.eatfortune);
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = basicBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(basicBot.chat.nouserfortune, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(basicBot.chat.selffortune, {nameto: user.username, fortune: this.getFortune()}));
+                            }
+                            else {
+                                return API.sendChat(subChat(basicBot.chat.fortune, {nameto: user.username, namefrom: chat.un, fortune: this.getFortune()}));
+                            }
+                        }
+                    }
+                }
+            },
+
             cycleCommand: {
                 command: 'cycle',
                 rank: 'manager',
