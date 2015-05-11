@@ -1739,7 +1739,13 @@
                     'A Mars Bar',
                     'A Twix Bar',
                     'A Toblerone',
-                    'A Wonka Bar'
+                    'A Wonka Bar',
+                    'A Sour Punch Straw',
+                    'A Gum Wrapper',
+                    'A Bowl Of Neapolitan Ice Cream',
+                    'A Bowl Of Chocolate Ice Cream',
+                    'A Bowl Of Strawberry Ice Cream',
+                    'A Bowl Of Vanilla Ice Cream'
                 ],
                 getCandy: function () {
                     var ca = Math.floor(Math.random() * this.candies.length);
