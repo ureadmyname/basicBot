@@ -1879,51 +1879,6 @@
                 }
             },
 
-fortuneCommand: {
-                command: 'fortune',
-                rank: 'user',
-                type: 'startsWith',
-                fortunes: ['An alien of some sort will be appearing to you shortly.',
-                'Fortune not found? Abort, Retry, Ignore.',
-                'Do not mistake temptation for opportunity.',
-                'The greatest danger could be your stupidity.',
-                'You will be hungry again in one hour.',
-                'You will receive a fortune.',
-                'Accept that some days you’re the pigeon, and some days you’re the statue.',
-                'When everything’s coming your way, you’re in the wrong lane.'
-                ],
-                getFortune: function () {
-                    var f = Math.floor(Math.random() * this.fortunes.length);
-                    return this.fortunes[f];
-                },
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        var msg = chat.message;
-
-                        var space = msg.indexOf(' ');
-                        if (space === -1) {
-                            API.sendChat(basicBot.chat.eatfortune);
-                            return false;
-                        }
-                        else {
-                            var name = msg.substring(space + 2);
-                            var user = basicBot.userUtilities.lookupUserName(name);
-                            if (user === false || !user.inRoom) {
-                                return API.sendChat(subChat(basicBot.chat.nouserfortune, {name: name}));
-                            }
-                            else if (user.username === chat.un) {
-                                return API.sendChat(subChat(basicBot.chat.selffortune, {nameto: user.username, fortune: this.getFortune()}));
-                            }
-                            else {
-                                return API.sendChat(subChat(basicBot.chat.fortune, {nameto: user.username, namefrom: chat.un, fortune: this.getFortune()}));
-                            }
-                        }
-                    }
-                }
-            },
-
             cycleCommand: {
                 command: 'cycle',
                 rank: 'manager',
@@ -2105,6 +2060,61 @@ fortuneCommand: {
                         else {
                             basicBot.settings.filterChat = !basicBot.settings.filterChat;
                             return API.sendChat(subChat(basicBot.chat.toggleon, {name: chat.un, 'function': basicBot.chat.chatfilter}));
+                        }
+                    }
+                }
+            },
+            
+            fortuneCommand: {
+                command: 'fortune',
+                rank: 'user',
+                type: 'startsWith',
+                fortunes: ['An alien of some sort will be appearing to you shortly.',
+                'Fortune not found? Abort, Retry, Ignore.',
+                'Do not mistake temptation for opportunity.',
+                'The greatest danger could be your stupidity.',
+                'You will receive a fortune.',
+                'Accept that some days you’re the pigeon, and some days you’re the statue.',
+                'When everything’s coming your way, you’re in the wrong lane.',
+                'You learn from your mistakes... You will learn a lot today.',
+                "What ever you\'re goals in life, embrace it visualize it, and for it will be yours.",
+                'Now is the time to try something new.',
+                'Everyone agrees. You are the best.',
+                'The man on the top of the mountain did not fall there.',
+                'Sometimes you just need to lay on the floor.',
+                'Happiness comes from a good life.',
+                "You're the controller of your destiny.",
+                "Do not fear what you don't know.",
+                "Express yourself Don't hold back!",
+                'The time is alway right to do what is right.'
+                ],
+                getFortune: function () {
+                    var f = Math.floor(Math.random() * this.fortunes.length);
+                    return this.fortunes[f];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(basicBot.chat.eatfortune);
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = basicBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(basicBot.chat.nouserfortune, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(basicBot.chat.selffortune, {nameto: user.username, fortune: this.getFortune()}));
+                            }
+                            else {
+                                return API.sendChat(subChat(basicBot.chat.fortune, {nameto: user.username, namefrom: chat.un, fortune: this.getFortune()}));
+                            }
                         }
                     }
                 }
