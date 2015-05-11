@@ -146,8 +146,8 @@ All Sub-Commands
 || unavailable | if the song is not available for some, most or all users |
 
 Coming Soon... Hop3fully
------------------
+-------------------------
 
-|Command | Arguments | Description |
-|:------:|:---------:|:--------------------------------------:|
-|!countdown | X | make a countdown to a certain event |
+|Command | Arguments | Description | Estimated Time |
+|:------:|:---------:|:---------------:|:-----------------------:|
+|!countdown | X | make a countdown to a certain event | Probably Never ;( |
