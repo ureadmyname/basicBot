@@ -1883,20 +1883,14 @@ fortuneCommand: {
                 command: 'fortune',
                 rank: 'user',
                 type: 'startsWith',
-                fortunes: ['gives you a fortune cookie. It reads "Why aren\'t you working on any projects?"',
-                    'gives you a fortune cookie. It reads "Give that special someone a compliment"',
-                    'gives you a fortune cookie. It reads "Take a risk!"',
-                    'gives you a fortune cookie. It reads "Go outside."',
-                    'gives you a fortune cookie. It reads "Don\'t forget to eat your veggies!"',
-                    'gives you a fortune cookie. It reads "Do you even lift?"',
-                    'gives you a fortune cookie. It reads "m808 pls"',
-                    'gives you a fortune cookie. It reads "If you move your hips, you\'ll get all the ladies."',
-                    'gives you a fortune cookie. It reads "I love you."',
-                    'gives you a Golden Cookie. You can\'t eat it because it is made of gold. Dammit.',
-                    'gives you an Oreo cookie with a glass of milk!',
-                    'gives you a rainbow cookie made with love :heart:',
-                    'gives you an old cookie that was left out in the rain, it\'s moldy.',
-                    'bakes you fresh cookies, it smells amazing.'
+                fortunes: ['An alien of some sort will be appearing to you shortly.',
+                'Fortune not found? Abort, Retry, Ignore.',
+                'Do not mistake temptation for opportunity.',
+                'The greatest danger could be your stupidity.',
+                'You will be hungry again in one hour.',
+                'You will receive a fortune.',
+                'Accept that some days you’re the pigeon, and some days you’re the statue.',
+                'When everything’s coming your way, you’re in the wrong lane.'
                 ],
                 getFortune: function () {
                     var f = Math.floor(Math.random() * this.fortunes.length);
