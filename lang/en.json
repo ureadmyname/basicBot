@@ -120,7 +120,7 @@
     "nouserfortune": "/em [qtbot] doesn't see %%NAME%% in this room.",
     "selffortune": "/me @%%NAMETO%%, you buy a fortune for yourself from, qtbot the fortune teller, qtbot says, '%%FORTUNE%%'",
     "fortune": "/me @%%NAMEFROM%% buys @%%NAMETO%% a fortune from, qtbot the fortune teller, qtbot says, '%%FORTUNE%%'",
-    "countdown": "/me %%NUMBERLEFT%% until, %%EVENT%%"
+    "countdown": "/me %%NUMBERLEFT%% until, %%EVENT%%!",
     "cycleguardtime": "/me [@%%NAME%%] The cycleguard is set to %%TIME%% minute(s).",
     "dclookuprank": "/me [@%%NAME%%] Only bouncers and above can do a lookup for others.",
     "emojilist": "/me Emoji list: %%LINK%%",
