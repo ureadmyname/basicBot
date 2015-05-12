@@ -16,7 +16,6 @@
     "isblacklisted": "/me This track is on the %%BLACKLIST%% blacklist! Skipping...",
 
 
-    "isopen": "/me The roulette is now open! Type !join to participate!",
     "winnerpicked": "/me A winner has been picked! @%%NAME%% to position %%POSITION%%.",
 
     "ball": "/me %%NAME%%'s question was: \"%%QUESTION%%\" and %%BOTNAME%%'s response is: \"%%RESPONSE%%\"",
@@ -120,7 +119,6 @@
     "nouserfortune": "/em [qtbot] doesn't see %%NAME%% in this room.",
     "selffortune": "/me @%%NAMETO%%, you buy a fortune for yourself from, qtbot the fortune teller, qtbot says, '%%FORTUNE%%'",
     "fortune": "/me @%%NAMEFROM%% buys @%%NAMETO%% a fortune from, qtbot the fortune teller, qtbot says, '%%FORTUNE%%'",
-    "countdown": "/me %%NUMBERLEFT%% until, %%EVENT%%!",
     "cycleguardtime": "/me [@%%NAME%%] The cycleguard is set to %%TIME%% minute(s).",
     "dclookuprank": "/me [@%%NAME%%] Only bouncers and above can do a lookup for others.",
     "emojilist": "/me Emoji list: %%LINK%%",
@@ -128,13 +126,11 @@
     "eta": "/me @%%NAME%% you will reach the booth in approximately %%TIME%%.",
     "facebook": "/me Like us on facebook: %%LINK%%",
     "starterhelp": "/me This image will get you started on plug: %%LINK%%",
-    "roulettejoin": "/me @%%NAME%% joined the roulette! (!leave if you regret it.)",
     "jointime": "/me [@%%NAMEFROM%%] @%%USERNAME%% has been in the room for %%TIME%%.",
     "kickrank": "/me [@%%NAME%%] you can't kick users with an equal or higher rank than you!",
     "kick": "/me [@%%NAME%%], @%%USERNAME%% you are being kicked from the community for %%TIME%% minutes.",
     "kill": "/me Shutting down.",
     "logout": "/me [@%%NAME%%] Logging out %%BOTNAME%%",
-    "rouletteleave": "/me @%%NAME%% left the roulette!",
     "songlink": "/me [@%%NAME%%] Link to current song: %%LINK%%",
     "usedlockskip": "/me [%%NAME%% used lockskip.]",
     "lockskippos": "/me [@%%NAME%%] Lockskip will now move the dj to position %%POSITION%%.",
@@ -171,5 +167,9 @@
     "voteratio": "/me [@%%NAME%%] @%%USERNAME%% ~ woots: %%WOOT%%, mehs: %%MEHS%%, ratio (w/m): %%RATIO%%.",
     "website": "/me Please visit our website: %%LINK%%",
     "youtube": "/me [%%NAME%%] Subscribe to us on youtube: %%LINK%%",
-    "songstatistics": "/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W/%%GRABS%%G/%%MEHS%%M."
+    "songstatistics": "/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W/%%GRABS%%G/%%MEHS%%M.",
+    "isopen": "/me The roulette is now open! Type !join to participate!",
+    "rouletteleave": "/me @%%NAME%% left the roulette!",
+    "roulettejoin": "/me @%%NAME%% joined the roulette! (!leave if you regret it.)",
+    "countdownmsg": "/me %%TIME%% hours until, %%EVENT%%!"
 }
