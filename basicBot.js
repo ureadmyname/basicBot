@@ -179,7 +179,7 @@
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
-        version: "2.3.4",
+        version: "2.4.5",
         status: false,
         name: "basicBot",
         loggedInID: null,
@@ -862,7 +862,7 @@
                     }
                 }
             }
-
+            clearTimeout(historySkip); 
             if (basicBot.settings.historySkip) {
                 var alreadyPlayed = false;
                 var apihistory = API.getHistory();
@@ -1524,7 +1524,7 @@
                     }
                 }
             },
- /*
+
             ballCommand: {
                 command: ['8ball', 'ask'],
                 rank: 'user',
@@ -1542,7 +1542,7 @@
                             API.sendChat(subChat(basicBot.chat.ball, {name: chat.un, botname: basicBot.settings.botName, question: argument, response: basicBot.chat.balls[randomBall]}));
                      }
                 }
-            }, */
+            }, 
             banCommand: {
                 command: 'ban',
                 rank: 'bouncer',
