@@ -1524,7 +1524,7 @@
                     }
                 }
             },
-
+ /*
             ballCommand: {
                 command: ['8ball', 'ask'],
                 rank: 'user',
@@ -1542,7 +1542,7 @@
                             API.sendChat(subChat(basicBot.chat.ball, {name: chat.un, botname: basicBot.settings.botName, question: argument, response: basicBot.chat.balls[randomBall]}));
                      }
                 }
-            },
+            }, */
             banCommand: {
                 command: 'ban',
                 rank: 'bouncer',
