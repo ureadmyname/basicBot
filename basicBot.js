@@ -1645,52 +1645,9 @@
                 command: 'candy',
                 rank: 'user',
                 type: 'startsWith',
-                candies: ['A Snickers Bar',
-                    "A Packet Of M&M's",
-                    'A Packet Of Sourpatch Kids',
-                    'A Jollyrancher',
-                    'A Twizzler',
-                    'A Tootsie Roll',
-                    'A Packet Of Jelly Bellys',
-                    'A KitKat',
-                    'A Milkyway Bar',
-                    'A Rolo Bar',
-                    'A Packet Of Milk Duds',
-                    'A Mounds Bar',
-                    'A Charleston Chew',
-                    'A Raisinets Packet',
-                    'A Nutrageous Bar',
-                    'A Baby Ruth',
-                    'A PayDay Bar',
-                    'A Heath Bar',
-                    "A Reeses Peanut Butter Cup",
-                    "A Packet Of Hershey's Caramels",
-                    'An Andes Thin Mint',
-                    'A Mr Goodbar',
-                    'A Packet Of Tim Tams',
-                    'A Chokito Bar',
-                    'An Aero Bar',
-                    'A Bounty Bar',
-                    'An Almond Joy Bar',
-                    'A Butterfinger Bar',
-                    'A Dove Chocolate Bar',
-                    'A Hershey Almond Toffee Bar',
-                    'A Kinder Bueno',
-                    'A Lindt Chocolate Bar',
-                    'A Mars Bar',
-                    'A Twix Bar',
-                    'A Toblerone',
-                    'A Wonka Bar',
-                    'A Sour Punch Straw',
-                    'A Gum Wrapper',
-                    'A Bowl Of Neapolitan Ice Cream',
-                    'A Bowl Of Chocolate Ice Cream',
-                    'A Bowl Of Strawberry Ice Cream',
-                    'A Bowl Of Vanilla Ice Cream'
-                ],
-                getCandy: function () {
-                    var ca = Math.floor(Math.random() * this.candies.length);
-                    return this.candies[ca];
+                getCandy: function (chat) {
+                    var ca = Math.floor(Math.random() * basicBot.chat.candies.length);
+                    return basicBot.chat.candies[ca];
                 },
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2888,31 +2845,9 @@
                 command: 'shots',
                 rank: 'user',
                 type: 'startsWith',
-                shots: ['Lemon Drop',
-                    'Smirnoff',
-                    'Jim Beam',
-                    'Jack Daniels',
-                    'Johnny Walker',
-                    'Jager Bomb',
-                    'Tequila',
-                    'Cement Mixer',
-                    'Jell-O-Shot',
-                    'Liquid Cocaine',
-                    'Redheaded Slut',
-                    'Slippery Nipple',
-                    'B-52',
-                    'Black Rose',
-                    'Fireball',
-                    'Grasshopper',
-                    'Irish Car Bomb',
-                    'Kamikaze',
-                    'Melon Ball',
-                    'Sammy Jager',
-                    'Tequila Slammer'
-                ],
-                getShots: function () {
-                    var sho = Math.floor(Math.random() * this.shots.length);
-                    return this.shots[sho];
+                getShots: function (chat) {
+                    var sho = Math.floor(Math.random() * basicBot.chat.shots.length);
+                    return basicBot.chat.shots[sho];
                 },
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
