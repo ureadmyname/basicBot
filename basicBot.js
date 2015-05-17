@@ -226,48 +226,6 @@
                 ["nsfw", "The song you contained was NSFW (image or sound). "],
                 ["unavailable", "The song you played was not available for some users. "]
             ],
-            ball: [
-            "I would answer but qtbot is drunk right now, shhhh.",
-            "The #dolphingang would know, I don't.",
-            "Concentrate and ask again.",
-            "Yer, something like that.",
-            "Better not tell you now.",
-            "I don't know, ask QTπ.",
-            "Reply hazy, try again.",
-            "You will have to wait.",
-            "Outlook not so good.",
-            "Cannot predict now.",
-            "It is decidedly so.",
-            "Signs point to yes.",
-            "You may rely on it.",
-            "Don't count on it.",
-            "My sources say no.",
-            "As I see it, yes.",
-            "I have my doubts.",
-            "Looks good to me!",
-            "Yes - definitely.",
-            "Yes, in due time.",
-            "Are you kidding?",
-            "Ask again later.",
-            "Don't bet on it.",
-            "Forget about it.",
-            "Without a doubt.",
-            "Definitely not.",
-            "My reply is no.",
-            "It is certain.",
-            "Very doubtful.",
-            "Outlook so so.",
-            "Looking good!",
-            "Outlook good.",
-            "IDC, at all.",
-            "Most likely.",
-            "DEEZ NUTS!",
-            "I.D.G.A.F.",
-            "Who knows?",
-            "Probably.",
-            "S.T.F.U.",
-            "Y.O.L.O."
-            ],
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
             motdEnabled: false,
@@ -905,36 +863,24 @@
                 }
             }
 
-            /*var alreadyPlayed = false;
-            for (var i = 0; i < basicBot.room.historyList.length; i++) {
-                if (basicBot.room.historyList[i][0] === obj.media.cid) {
-                    var firstPlayed = basicBot.room.historyList[i][1];
-                    var plays = basicBot.room.historyList[i].length - 1;
-                    var lastPlayed = basicBot.room.historyList[i][plays];
-                    API.sendChat(subChat(basicBot.chat.songknown, {plays: plays, timetotal: basicBot.roomUtilities.msToStr(Date.now() - firstPlayed), lasttime: basicBot.roomUtilities.msToStr(Date.now() - lastPlayed)}));
-                    basicBot.room.historyList[i].push(+new Date());
-                    alreadyPlayed = true;
-                }
-            }
-            if (!alreadyPlayed) {
-                basicBot.room.historyList.push([obj.media.cid, +new Date()]);
-            }*/
-
             if (basicBot.settings.historySkip) {
                 var alreadyPlayed = false;
                 var apihistory = API.getHistory();
                 var name = obj.dj.username;
+                var historySkip = setTimeout(function () { 
                 for (var i = 0; i < apihistory.length; i++) {
                     if (apihistory[i].media.cid === obj.media.cid) {
                         API.sendChat(subChat(basicBot.chat.songknown, {name: name}));
                         API.moderateForceSkip();
                         basicBot.room.historyList[i].push(+new Date());
                         alreadyPlayed = true;
+                        } 
                     }
                 }
-                if (!alreadyPlayed) {
-                    basicBot.room.historyList.push([obj.media.cid, +new Date()]);
-                }
+                    if (!alreadyPlayed) {
+                        basicBot.room.historyList.push([obj.media.cid, +new Date()]);
+                    }
+                }, 2000); 
             }
             var newMedia = obj.media;
             if (basicBot.settings.timeGuard && newMedia.duration > basicBot.settings.maximumSongLength * 60 && !basicBot.room.roomevent) {
@@ -1174,9 +1120,7 @@
                 eventUserskip: $.proxy(this.eventUserskip, this),
                 eventUserjoin: $.proxy(this.eventUserjoin, this),
                 eventUserleave: $.proxy(this.eventUserleave, this),
-                //eventUserfan: $.proxy(this.eventUserfan, this),
                 //eventFriendjoin: $.proxy(this.eventFriendjoin, this),
-                //eventFanjoin: $.proxy(this.eventFanjoin, this),
                 eventVoteupdate: $.proxy(this.eventVoteupdate, this),
                 eventCurateupdate: $.proxy(this.eventCurateupdate, this),
                 eventRoomscoreupdate: $.proxy(this.eventRoomscoreupdate, this),
@@ -1193,7 +1137,6 @@
             API.on(API.USER_SKIP, this.proxy.eventUserskip);
             API.on(API.USER_JOIN, this.proxy.eventUserjoin);
             API.on(API.USER_LEAVE, this.proxy.eventUserleave);
-            //API.on(API.USER_FAN, this.proxy.eventUserfan);
             API.on(API.VOTE_UPDATE, this.proxy.eventVoteupdate);
             API.on(API.GRAB_UPDATE, this.proxy.eventCurateupdate);
             API.on(API.ROOM_SCORE_UPDATE, this.proxy.eventRoomscoreupdate);
@@ -1208,7 +1151,6 @@
             API.off(API.USER_SKIP, this.proxy.eventUserskip);
             API.off(API.USER_JOIN, this.proxy.eventUserjoin);
             API.off(API.USER_LEAVE, this.proxy.eventUserleave);
-            //API.off(API.USER_FAN, this.proxy.eventUserfan);
             API.off(API.VOTE_UPDATE, this.proxy.eventVoteupdate);
             API.off(API.CURATE_UPDATE, this.proxy.eventCurateupdate);
             API.off(API.ROOM_SCORE_UPDATE, this.proxy.eventRoomscoreupdate);
@@ -1595,13 +1537,12 @@
                             var msg = chat.message;
                             var argument = msg.substring(cmd.length + 1);
                             var randomUser = Math.floor(Math.random() * crowd.length);
-                            var randomBall = Math.floor(Math.random() * basicBot.settings.ball.length);
+                            var randomBall = Math.floor(Math.random() * basicBot.chat.balls.length);
                             var randomSentence = Math.floor(Math.random() * 1);
-                            API.sendChat(subChat(basicBot.chat.ball, {name: chat.un, botname: basicBot.settings.botName, question: argument, response: basicBot.settings.ball[randomBall]}));
+                            API.sendChat(subChat(basicBot.chat.ball, {name: chat.un, botname: basicBot.settings.botName, question: argument, response: basicBot.chat.balls[randomBall]}));
                      }
                 }
             },
-
             banCommand: {
                 command: 'ban',
                 rank: 'bouncer',
@@ -1832,30 +1773,9 @@
                 command: 'cookie',
                 rank: 'user',
                 type: 'startsWith',
-                cookies: ['has given you a chocolate chip cookie!',
-                    'has given you a soft homemade oatmeal cookie!',
-                    'has given you a plain, dry, old cookie. It was the last one in the bag. Gross.',
-                    'gives you a sugar cookie. What, no frosting and sprinkles? 0/10 would not touch.',
-                    'gives you a chocolate chip cookie. Oh wait, those are raisins. Bleck!',
-                    'gives you an enormous cookie. Poking it gives you more cookies. Weird.',
-                    'gives you a fortune cookie. It reads "Why aren\'t you working on any projects?"',
-                    'gives you a fortune cookie. It reads "Give that special someone a compliment"',
-                    'gives you a fortune cookie. It reads "Take a risk!"',
-                    'gives you a fortune cookie. It reads "Go outside."',
-                    'gives you a fortune cookie. It reads "Don\'t forget to eat your veggies!"',
-                    'gives you a fortune cookie. It reads "Do you even lift?"',
-                    'gives you a fortune cookie. It reads "m808 pls"',
-                    'gives you a fortune cookie. It reads "If you move your hips, you\'ll get all the ladies."',
-                    'gives you a fortune cookie. It reads "I love you."',
-                    'gives you a Golden Cookie. You can\'t eat it because it is made of gold. Dammit.',
-                    'gives you an Oreo cookie with a glass of milk!',
-                    'gives you a rainbow cookie made with love :heart:',
-                    'gives you an old cookie that was left out in the rain, it\'s moldy.',
-                    'bakes you fresh cookies, it smells amazing.'
-                ],
-                getCookie: function () {
-                    var c = Math.floor(Math.random() * this.cookies.length);
-                    return this.cookies[c];
+                getCookie: function (chat) {
+                    var c = Math.floor(Math.random() * basicBot.chat.cookies.length);
+                    return basicBot.chat.cookies[c];
                 },
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -1884,6 +1804,7 @@
                     }
                 }
             },
+
 
             cycleCommand: {
                 command: 'cycle',
@@ -2785,19 +2706,9 @@
                 command: 'props',
                 rank: 'user',
                 type: 'startsWith',
-                props: ['"Great song."',
-                    '"Amazing song."',
-                    '"Love this song <3"',
-                    '"This song = 11/10 IGN."',
-                    '"This track is amazing."',
-                    '"Awesometastic."',
-                    '"Awesome track."',
-                    '"Excellent tune."',
-                    '"Nice Play."'
-                ],
-                getProp: function () {
-                    var p = Math.floor(Math.random() * this.props.length);
-                    return this.props[p];
+                getProp: function (chat) {
+                    var p = Math.floor(Math.random() * basicBot.chat.props.length);
+                    return basicBot.chat.props[p];
                 },
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
