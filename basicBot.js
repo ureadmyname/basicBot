@@ -2849,7 +2849,7 @@
                                 return API.sendChat(subChat(basicBot.chat.selfshots, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.giveshots, {nameto: user.username, namefrom: chat.un, shot: this.getShots()}));
+                                return API.sendChat(subChat(basicBot.chat.shot, {nameto: user.username, namefrom: chat.un, shot: this.getShots()}));
                             }
                         }
                     }
