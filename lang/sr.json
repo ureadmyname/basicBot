@@ -56,6 +56,8 @@
         "Don't bet on it.",
         "Forget about it."
     ],
+    "currentbotname": "\/me Bot name currently set to: %%BOTNAME%%",
+    "botnameset": "\/me Bot name now set to: %%BOTNAME%%",
     "nodatafound": "Prethodni podaci nisu prona\u0111eni.",
     "currentlang": "\/me Jezik podesen na: %%LANGUAGE%%",
     "langerror": "\/me Jezik koji ste odabrali nije dostupan. Poseti %%LINK%% da bi pronasao dostupne jezike.",
