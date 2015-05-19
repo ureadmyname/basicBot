@@ -142,7 +142,7 @@ All Sub-Commands
 |!lockskip | crapiplayedthewrongsong | skip your song if you accidentally played the wrong song |
 |^ bouncer+| history | if the song is in the "DJ history" |
 || nsfw | if the song played contained an NSFW image or sound |
-|| sound | if the song played had horrible sound quality or no sound. |
+|| sound | if the song played had horrible sound quality or no sound |
 || theme | if the song doesn't fit the room theme  |
 || unavailable | if the song is not available for some, most or all users |
 
@@ -151,4 +151,4 @@ Coming Soon... Hop3fully
 
 |Command | Arguments | Description | Estimated Time |
 |:------:|:---------:|:---------------:|:-----------------------:|
-|!countdown | X | make a countdown to a certain event | Probably Never ;( |
+| idk | | suggest some ideas if you want |
