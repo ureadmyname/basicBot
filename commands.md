@@ -18,6 +18,7 @@ Manager+
 |!autorules | | make !rules be displayed on a timer |
 |!autoshuffle | | make !shuffle be displayed on a timer |
 |!autoskip | | skips songs automatically when they're done (use when the circles-bug happens) |
+|!botname |	(botname) | change the default bot name |
 |!bouncer+ | | disable/enable bouncer+ |
 |!clearchat | |clears the chat |
 |!cycle | | toggle DJ cycle |
