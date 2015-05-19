@@ -56,6 +56,8 @@
         "Don't bet on it.",
         "Forget about it."
     ],
+    "currentbotname": "\/me Bot name currently set to: %%BOTNAME%%",
+    "botnameset": "\/me Bot name now set to: %%BOTNAME%%",
     "nodatafound": "Aucune donn\u00e9e trouv\u00e9e.",
     "currentlang": "\/me La langue actuellement utilis\u00e9e est : %%LANGUAGE%%",
     "langerror": "\/me La langue que vous avez s\u00e9lectionn\u00e9e n'est pas disponible. Veuillez visiter %%LINK%% pour trouver la liste des langues disponibles.",
