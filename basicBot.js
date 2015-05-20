@@ -1750,13 +1750,13 @@
                 type: 'exact',
                 getLetters: function (chat) {
                 var le = Math.floor(Math.random() * basicBot.chat.letter1.length);
-                return basicBot.chat.letter1[le] * 6;
+                return basicBot.chat.letter1[le];
                 },
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                    return API.sendChat(subChat(basicBot.chat.letter, {letter1: this.getLetters}));
+                    return API.sendChat(subChat(basicBot.chat.letter, {letter: this.getLetters}));
                               }
                           }
                       },
