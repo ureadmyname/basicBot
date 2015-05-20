@@ -97,6 +97,7 @@ User
 |Command | Arguments |  Description |
 |:------:|:---------:|:--------------------------------------:|
 |!8ball | (message) | ask the bot a question, the bot will return random variations of a yes or no answer |
+|!acronym | | 6 random letters will be made, try to make an acronym out of them |
 |!allbotstuff | | a link to everything to do with the bot |
 |!autowoot | | links to PlugCubed, the advised script/plugin to use for autowooting |
 |!ba | | explains the Brand Ambassador rank |
