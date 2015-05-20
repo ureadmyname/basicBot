@@ -1744,8 +1744,8 @@
                 }
             },
             
-                anagramCommand: {
-                command: 'anagram',
+                acronymCommand: {
+                command: 'acronym',
                 rank: 'user',
                 type: 'exact',
                 getLetters: function (chat) {
