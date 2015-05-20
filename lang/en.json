@@ -397,5 +397,5 @@
 "Y",
 "Z"
 ],
-"letter": "%%LETTER1%%, %%LETTER1%%, %%LETTER1%%, %%LETTER1%%, %%LETTER1%%, %%LETTER1%%"
+"letter": "[qtbot] Anagram: %%LETTER%%, %%LETTER%%, %%LETTER%%, %%LETTER%%, %%LETTER%%, %%LETTER%%"
 }
