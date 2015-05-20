@@ -397,11 +397,6 @@
 "Y",
 "Z"
 ],
-"letter2":[
-"A",
-"E",
-"I",
-"O",
-"U"
+"letter": "%%LETTER1%%, %%LETTER1%%, %%LETTER1%%, %%LETTER1%%, %%LETTER1%%, %%LETTER1%%"
 ]
 }
