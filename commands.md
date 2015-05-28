@@ -128,7 +128,6 @@ User
 |!shots | (@user) | give someone a shot |
 |!shuffle | | show the meaning of Wednesday and Friday |
 |!theme | | links to the room's theme |
-|!troll | | show a trollface |
 |!twitch | | "theqtpi" twitch link |
 |!website | | links to the room's website (not set in settings) |
 |!subinfo | | explain what the plug.dj subscription service means |
