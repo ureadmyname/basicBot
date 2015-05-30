@@ -325,7 +325,7 @@
 "retrievingdata": "Retrieving previously stored data.",
 "roomadvertising": "\/me @%%NAME%%, don't post links to other rooms please.",
 "roomrules": "\/me Please find the room rules here: %%LINK%%",
-"roulettejoin": "\/me @%%NAME%% joined the roulette! (!leave if you regret it.)",
+"roulettejoin": "@%%NAME%% joined the roulette! (!leave if you regret it)",
 "rouletteleave": "\/me @%%NAME%% left the roulette!",
 "sessionstats": "\/me [@%%NAME%%] Total woots: %%WOOTS%%, total mehs: %%MEHS%%, total grabs: %%GRABS%%.",
 "skip": "\/me [%%NAME%% used skip.]",
