@@ -13,11 +13,12 @@ Manager+
 |!add | @user | add user to the waitlist |
 |!afklimit | X | sets the maximum afk time |
 |!afkremoval | | toggles the afk check |
-|!autofav | | make !fav be displayed on a timer |
-|!autoroulette | | make !roulette be displayed on a timer |
-|!autorules | | make !rules be displayed on a timer |
-|!autoshuffle | | make !shuffle be displayed on a timer |
+|!autoFav | | make !fav be displayed on a timer |
+|!autoRoulette | | make !roulette be displayed on a timer |
+|!autoRules | | make !rules be displayed on a timer |
+|!autoShuffle | | make !shuffle be displayed on a timer |
 |!autoskip | | skips songs automatically when they're done (use when the circles-bug happens) |
+|!autoTwitch | | make !twitchlive be displayed on a timer (use when TheQTpi is livestreaming) |
 |!botname |	(botname) | change the default bot name |
 |!bouncer+ | | disable/enable bouncer+ |
 |!clearchat | |clears the chat |
@@ -129,6 +130,7 @@ User
 |!shuffle | | show the meaning of Wednesday and Friday |
 |!theme | | links to the room's theme |
 |!twitch | | "theqtpi" twitch link |
+|!twitchlive | | "theqtpi" twitch link when she is live |
 |!website | | links to the room's website (not set in settings) |
 |!subinfo | | explain what the plug.dj subscription service means |
 |!youtube | | links to the room's youtube page (not set in settings) |
@@ -151,4 +153,4 @@ Coming Soon... Hop3fully
 
 |Command | Arguments | Description | Estimated Time |
 |:------:|:---------:|:---------------:|:-----------------------:|
-| idk | | suggest some ideas if you want |
+| staff | | small things that will improve your chances of getting staff here |
