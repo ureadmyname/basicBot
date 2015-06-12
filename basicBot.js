@@ -871,22 +871,21 @@ basicBot.roomUtilities.booth.unlockBooth();
                     }, 1 * 1000, user);
             }
         },
-         eventUserleave: function (user) {
-            var previousDJ = API.getHistory()[1].user.id;
+        eventUserleave: function (user) {
             var lastDJ = API.getHistory()[0].user.id;
-             for (var i = 0; i < basicBot.room.users.length; i++) {
-                 if (basicBot.room.users[i].id === user.id) {
-                     basicBot.userUtilities.updateDC(basicBot.room.users[i]);
-                     basicBot.room.users[i].inRoom = false;
-                    if (lastDJ == user.id || previousDJ == user.id){
+            for (var i = 0; i < basicBot.room.users.length; i++) {
+                if (basicBot.room.users[i].id === user.id) {
+                    basicBot.userUtilities.updateDC(basicBot.room.users[i]);
+                    basicBot.room.users[i].inRoom = false;
+                    if (lastDJ == user.id){
                         var user = basicBot.userUtilities.lookupUser(basicBot.room.users[i].id);
                         basicBot.userUtilities.updatePosition(user, 0);
                         user.lastDC.time = null;
                         user.lastDC.position = user.lastKnownPosition;
                     }
-                 }
-             }
-         },
+                }
+            }
+        },
         eventVoteupdate: function (obj) {
             for (var i = 0; i < basicBot.room.users.length; i++) {
                 if (basicBot.room.users[i].id === obj.user.id) {
@@ -1020,31 +1019,29 @@ return API.moderateForceSkip();
 }
 }, 2000); 
 
-            clearTimeout(historySkip); 
+            clearTimeout(historySkip);
             if (basicBot.settings.historySkip) {
                 var alreadyPlayed = false;
                 var apihistory = API.getHistory();
                 var name = obj.dj.username;
-                var historySkip = setTimeout(function () { 
-                for (var i = 0; i < apihistory.length; i++) {
-                    if (apihistory[i].media.cid === obj.media.cid) {
-                    	basicBot.room.historyList[i].push(+new Date());
-	                alreadyPlayed = true;
-                        API.sendChat(subChat(basicBot.chat.songknown, {name: name}));
-                        if (basicBot.settings.smartSkip){
-			return basicBot.roomUtilities.smartSkip();
-			}
-			else {
-                        return API.moderateForceSkip();
-			}
-                        basicBot.room.historyList[i].push(+new Date());
-                        alreadyPlayed = true;
-                        } 
+                var historySkip = setTimeout(function () {
+                    for (var i = 0; i < apihistory.length; i++) {
+                        if (apihistory[i].media.cid === obj.media.cid) {
+                            basicBot.room.historyList[i].push(+new Date());
+                            alreadyPlayed = true;
+                            API.sendChat(subChat(basicBot.chat.songknown, {name: name}));
+                            if (basicBot.settings.smartSkip){
+                                return basicBot.roomUtilities.smartSkip();
+                            }
+                            else {
+                                return API.moderateForceSkip();
+                            }
+                        }
                     }
                     if (!alreadyPlayed) {
                         basicBot.room.historyList.push([obj.media.cid, +new Date()]);
                     }
-                }, 2000); 
+                }, 2000);
             }
             if (user.ownSong) {
                 API.sendChat(subChat(basicBot.chat.permissionownsong, {name: user.username}));
@@ -1192,7 +1189,7 @@ return API.moderateForceSkip();
                 if ((msg.indexOf(joinedroulette) > -1 || msg.indexOf(leftroulette) > -1) && chat.uid === basicBot.loggedInID) {
                     setTimeout(function (id) {
                         API.moderateDeleteChat(id);
-                    }, 2 * 1000, chat.cid);
+                    }, 5 * 1000, chat.cid);
                     return true;
                 }
                 return false;
