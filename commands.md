@@ -152,6 +152,6 @@ All Sub-Commands
 Coming Soon... Hop3fully
 -------------------------
 
-|Command | Arguments | Description | Estimated Time |
+|Command | Description | Estimated Time |
 |:------:|:---------:|:---------------:|:-----------------------:|
-| staff | | small things that will improve your chances of getting staff here |
+| staff | small things that will improve your chances of getting staff here| 20th June hop3fully |
