@@ -905,10 +905,13 @@ basicBot.roomUtilities.booth.unlockBooth();
             var timeLeft = API.getTimeRemaining();
 	    var timeElapsed = API.getTimeElapsed(); 
 	    
-if (basicBot.settings.smartSkip && timeLeft > timeElapsed){
-basicBot.roomUtilities.smartSkip();
-}
-else { 
+            if (basicBot.settings.voteSkip) {
+                if ((mehs - woots) >= (basicBot.settings.voteSkipLimit)) {
+                    API.sendChat(subChat(basicBot.chat.voteskipexceededlimit, {name: dj.username, limit: basicBot.settings.voteSkipLimit}));
+                    if (basicBot.settings.smartSkip && timeLeft > timeElapsed){
+                        basicBot.roomUtilities.smartSkip();
+                    }
+                    else {
                     API.moderateForceSkip();
                     }
                 }
@@ -1043,12 +1046,6 @@ return API.moderateForceSkip();
                     }
                 }, 2000); 
             }
-            var newMedia = obj.media;
-            if (basicBot.settings.timeGuard && newMedia.duration > basicBot.settings.maximumSongLength * 60 && !basicBot.room.roomevent) {
-                var name = obj.dj.username;
-                API.sendChat(subChat(basicBot.chat.timelimit, {name: name, maxlength: basicBot.settings.maximumSongLength}));
-                API.moderateForceSkip();
-            }
             if (user.ownSong) {
                 API.sendChat(subChat(basicBot.chat.permissionownsong, {name: user.username}));
                 user.ownSong = false;
@@ -1060,7 +1057,6 @@ return API.moderateForceSkip();
                 basicBot.room.autoskipTimer = setTimeout(function () {
                 var endcid = API.getMedia().cid;
 		if (startcid === endcid) { 
-                    console.log("Skipping track.");
                     //API.sendChat('Song stuck, skipping...');
                     API.moderateForceSkip();
 		}
