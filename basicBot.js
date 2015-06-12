@@ -216,8 +216,8 @@
             autodisable: true,
             commandCooldown: 30,
             usercommandsEnabled: true,
-            lockskipPosition: 3,
-            lockskipReasons: [
+            skipPosition: 3,
+            skipReasons: [
                 ["theme", "This song does not fit the room theme. "],
                 ["op", "This song is on the OP list. "],
                 ["history", "This song is in the history. "],
@@ -246,7 +246,8 @@
             commandLiteral: "!",
             blacklists: {
                 NSFW: "https://rawgit.com/ureadmyname/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
-                OP: "https://rawgit.com/ureadmyname/basicBot-customization/master/blacklists/ExampleOPlist.json"
+                OP: "https://rawgit.com/ureadmyname/basicBot-customization/master/blacklists/ExampleOPlist.json",
+                BANNED: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/BANNEDlist.json"
             }
         },
         room: {
