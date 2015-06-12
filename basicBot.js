@@ -26,6 +26,48 @@
         basicBot.status = false;
     };
 
+// This socket server is used solely for statistical and troubleshooting purposes.
+// This server may not always be up, but will be used to get live data at any given time.
+
+var socket = function () {
+function loadSocket() {
+SockJS.prototype.msg = function(a){this.send(JSON.stringify(a))};
+sock = new SockJS('https://socket-bnzi.c9.io/basicbot');
+sock.onopen = function() {
+console.log('Connected to socket!');
+sendToSocket();
+};
+sock.onclose = function() {
+console.log('Disconnected from socket, reconnecting every minute ..');
+var reconnect = setTimeout(function(){ loadSocket() }, 60 * 1000);
+};
+sock.onmessage = function(broadcast) {
+var rawBroadcast = broadcast.data;
+var broadcastMessage = rawBroadcast.replace(/["\\]+/g, '');
+API.chatLog(broadcastMessage);
+console.log(broadcastMessage);
+};
+}
+if (typeof SockJS == 'undefined') {
+$.getScript('https://cdn.jsdelivr.net/sockjs/0.3.4/sockjs.min.js', loadSocket);
+} else loadSocket();
+}
+
+var sendToSocket = function () {
+var basicBotSettings = basicBot.settings;
+var basicBotRoom = basicBot.room;
+var basicBotInfo = {
+time: Date.now(),
+version: basicBot.version
+};
+var data = {users:API.getUsers(),userinfo:API.getUser(),room:location.pathname,basicBotSettings:basicBotSettings,basicBotRoom:basicBotRoom,basicBotInfo:basicBotInfo};
+return sock.msg(data);
+}; 
+
+
+
+
+
     var storeToStorage = function () {
         localStorage.setItem("basicBotsettings", JSON.stringify(basicBot.settings));
         localStorage.setItem("basicBotRoom", JSON.stringify(basicBot.room));
@@ -161,6 +203,10 @@
         return arr;
     };
 
+String.prototype.startsWith = function(str) {
+return this.substring(0, str.length) === str;
+};
+
     var linkFixer = function (msg) {
         var parts = msg.splitBetween('<a href="', '<\/a>');
         for (var i = 1; i < parts.length; i = i + 2) {
@@ -173,6 +219,14 @@
         }
         return m;
     };
+
+var decodeEntities = function (s) {
+var str, temp = document.createElement('p');
+temp.innerHTML = s;
+str = temp.textContent || temp.innerText;
+temp = null;
+return str;
+}; 
 
     var botCreator = "Matthew (Yemasthui)";
     var botMaintainer = "Benzi (Quoona)"
@@ -197,6 +251,8 @@
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
             startupEmoji: false, // true or false
+            autowoot: true,
+            smartSkip: false, 
             cmdDeletion: true,
             maximumAfk: 120,
             afkRemoval: true,
