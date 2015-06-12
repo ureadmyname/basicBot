@@ -1206,11 +1206,11 @@ return API.moderateForceSkip();
                 else return false;
                 var userPerm = basicBot.userUtilities.getPermission(chat.uid);
                 //console.log("name: " + chat.un + ", perm: " + userPerm);
-                if (chat.message !== basicBot.settings.commandLiteral + '!join' && chat.message !== basicBot.settings.commandLiteral + "!leave") {
+                if (chat.message !== basicBot.settings.commandLiteral + 'join' && chat.message !== basicBot.settings.commandLiteral + "!leave") {
                     if (userPerm === 0 && !basicBot.room.usercommand) return void (0);
                     if (!basicBot.room.allcommand) return void (0);
                 }
-                if (chat.message === basicBot.settings.commandLiteral + '!eta' && basicBot.settings.etaRestriction) {
+                if (chat.message === basicBot.settings.commandLiteral + 'eta' && basicBot.settings.etaRestriction) {
                     if (userPerm < 2) {
                         var u = basicBot.userUtilities.lookupUser(chat.uid);
                         if (u.lastEta !== null && (Date.now() - u.lastEta) < 1 * 60 * 60 * 1000) {
@@ -2931,6 +2931,7 @@ return API.moderateForceSkip();
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
+                    	sendToSocket(); 
                         storeToStorage();
                         basicBot.disconnectAPI();
                         setTimeout(function () {
@@ -2950,6 +2951,7 @@ return API.moderateForceSkip();
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                         API.sendChat(basicBot.chat.reload);
+                        sendToSocket(); 
                         storeToStorage();
                         basicBot.disconnectAPI();
                         kill();
