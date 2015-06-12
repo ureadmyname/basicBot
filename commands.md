@@ -154,4 +154,4 @@ Coming Soon... Hop3fully
 
 |Command | Description | Estimated Time |
 |:------:|:---------:|:---------------:|:-----------------------:|
-| staff | small things that will improve your chances of getting staff here| 20th June hop3fully |
+| !staff | small things that will improve your chances of getting staff here| 20th June hop3fully |
