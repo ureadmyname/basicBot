@@ -66,7 +66,7 @@ Bouncer
 |!kick | (X) | kicks user for X minutes, default is 0.25 minutes (15 seconds) |
 |!kill | | shut down the bot |
 |!lockguard | | toggle the lockguard |
-|!lockskip | (reason) | skips, locks and moves the dj back up (the position can be set with !skippos) |
+|!skip | (reason) | skips, locks and moves the dj back up (the position can be set with !skippos) |
 |!motd | (X)/(message) | when no argument is specified, returns the Message of the Day, when X is specified, the MotD is given every X songs, when "message" is given, it sets the MotD to message |
 |!mute | @user (X) | mute user, for X minutes if X is specified, otherwise for an undefined period |
 |!reload | | reload the bot |
