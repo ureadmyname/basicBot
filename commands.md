@@ -142,7 +142,7 @@ All Sub-Commands
 
 |MainCommand | Sub-Command | Description |
 |:------:|:---------:|:--------------------------------------:|
-|!lockskip | crapiplayedthewrongsong | skip your song if you accidentally played the wrong song |
+|!skip | crapiplayedthewrongsong | skip your song if you accidentally played the wrong song |
 |^ bouncer+| history | if the song is in the "DJ history" |
 || nsfw | if the song played contained an NSFW image or sound |
 || sound | if the song played had horrible sound quality or no sound |
