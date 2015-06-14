@@ -324,7 +324,7 @@
 "removenotinwl": "\/me [@%%NAME%%] Specified user @%%USERNAME%% is not in the waitlist.",
 "retrievingdata": "Retrieving previously stored data.",
 "roomadvertising": "\/me @%%NAME%%, don't post links to other rooms please.",
-"roomrules": "\/me Please find the room rules here: %%LINK%%",
+"roomrules": "\/me The room rules can be found here: %%LINK%%",
 "roulettejoin": "@%%NAME%% joined the roulette! (!leave if you regret it)",
 "rouletteleave": "\/me @%%NAME%% left the roulette!",
 "sessionstats": "\/me [@%%NAME%%] Total woots: %%WOOTS%%, total mehs: %%MEHS%%, total grabs: %%GRABS%%.",
