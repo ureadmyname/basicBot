@@ -2889,6 +2889,7 @@ return API.moderateForceSkip();
                     else {
                         var msg = chat.message;
                         var space = msg.indexOf(' ');
+                        var dj = API.getDJ();
                         if (space === -1) {
                             API.sendChat(basicBot.chat.eatprop);
                             return false;
@@ -2899,9 +2900,11 @@ return API.moderateForceSkip();
                             if (user === false || !user.inRoom) {
                                 return API.sendChat(subChat(basicBot.chat.nouserprop, {name: name}));
                             }
-                            else if (user.username === chat.un) {
+                            else if (dj === chat.un) {
                                 return API.sendChat(subChat(basicBot.chat.selfprop, {name: name}));
                             }
+                            else if (dj === user.username) {
+                                return API.sendChat(subChat(basicBot.chat.prop, {nameto: user.username, namefrom: chat.un, prop: this.getProp()}));
                             else {
                                 return API.sendChat(subChat(basicBot.chat.prop, {nameto: user.username, namefrom: chat.un, prop: this.getProp()}));
                             }
