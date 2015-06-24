@@ -128,7 +128,7 @@ User
 |!rouletteinfo | | explains the roulette to people who don't know what it is |
 |!rules | | links to the rules |
 |!shots | (@user) | give someone a shot |
-|!staff | small things that will improve your chances of getting staff in our community|
+|!staff | | small things that will improve your chances of getting staff in our community |
 |!shuffle | | show the meaning of Wednesday and Friday |
 |!theme | | links to the room's theme |
 |!twitch | | "theqtpi" twitch link |
