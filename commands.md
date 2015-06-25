@@ -13,12 +13,12 @@ Manager+
 |!add | @user | add user to the waitlist |
 |!afklimit | X | sets the maximum afk time |
 |!afkremoval | | toggles the afk check |
-|!autoFav | | make !fav be displayed on a timer |
-|!autoRoulette | | make !roulette be displayed on a timer |
-|!autoRules | | make !rules be displayed on a timer |
-|!autoShuffle | | make !shuffle be displayed on a timer |
+|!autofav | | make !fav be displayed on a timer |
+|!autoroulette | | make !roulette be displayed on a timer |
+|!autorules | | make !rules be displayed on a timer |
+|!autoshuffle | | make !shuffle be displayed on a timer |
 |!autoskip | | skips songs automatically when they're done (use when the circles-bug happens) |
-|!autoTwitch | | make !twitchlive be displayed on a timer (use when TheQTpi is livestreaming) |
+|!autotwitch | | make !twitchlive be displayed on a timer (use when TheQTpi is livestreaming) |
 |!botname |	(botname) | change the default bot name |
 |!bouncer+ | | disable/enable bouncer+ |
 |!clearchat | |clears the chat |
