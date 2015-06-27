@@ -309,6 +309,7 @@
 "nolimitspecified": "\/me [@%%NAME%%] No limit specified.",
 "nolistspecified": "\/me [@%%NAME%%] No list specified.",
 "noposition": "\/me No last position known. The waitlist needs to update at least once to register a user's last position.",
+"notavailable": "\/me @%%NAME%%, the song you played was not available.",
 "notbanned": "\/me [@%%NAME%%] The user was not banned.",
 "notdisconnected": "\/me @%%NAME%% did not disconnect during my time here.",
 "notghosting": "[%%NAME1%%] %%NAME2%% is not ghosting.",
