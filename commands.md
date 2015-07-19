@@ -14,6 +14,7 @@ Manager+
 |!afklimit | X | sets the maximum afk time |
 |!afkremoval | | toggles the afk check |
 |!autofav | | make !fav be displayed on a timer |
+|!autoquestion | | make !question be displayed on a timer |
 |!autoroulette | | make !roulette be displayed on a timer |
 |!autorules | | make !rules be displayed on a timer |
 |!autoshuffle | | make !shuffle be displayed on a timer |
@@ -125,6 +126,7 @@ User
 |!ping | | pong! |
 |!plugcolor | | sends a link to the plugcolor script |
 |!props | (@user) | give "props" to someone for playing a great song |
+|!question | | link to our weekly question that gives you input towards changing our community |
 |!ref | | the "I.T" support command for plug.dj |
 |!rouletteinfo | | explains the roulette to people who don't know what it is |
 |!rule8 | | refers to the holy rule8 |
