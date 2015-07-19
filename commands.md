@@ -117,6 +117,7 @@ User
 |!ghostbuster | @user | checks if user is ghosting |
 |!gif | (message) | returns a gif (from giphy) related to the tag provided, Returns a random gif if no tags are provided |
 |!help | | links to an image to help get people started on plug **NOT AVAILABLE FOR THE MOMENT**|
+|!illuminati | | plug.dj is illuminati confirmed! |
 |!join | | join the roulette if it's up |
 |!leave | | leave the roulette if you joined |
 |!link | | when the user is the DJ, give a link to the current song |
@@ -126,6 +127,7 @@ User
 |!props | (@user) | give "props" to someone for playing a great song |
 |!ref | | the "I.T" support command for plug.dj |
 |!rouletteinfo | | explains the roulette to people who don't know what it is |
+|!rule8 | | refers to the holy rule8 |
 |!rules | | links to the rules |
 |!shots | (@user) | give someone a shot |
 |!staff | | small things that will improve your chances of getting staff in our community |
