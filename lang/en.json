@@ -385,8 +385,9 @@
 
 "eatprop": "/me ",
 "nouserprop": "/em [qtbot] doesn't see %%NAME%% in this room.",
-"selfprop": "/me [qtbot] @%%NAME%%, Giving props to yourself, that's a bit greedy. How about giving other people props!",
-"prop": "/me [qtbot]: @%%NAMEFROM%% says %%PROP%% to, @%%NAMETO%%",
+"selfprop": "/me [qtbot] @%%NAME%%, Giving props to yourself, that's a bit greedy. How about giving other people props for their music.",
+"prop": "/me [qtbot]: Song Props: @%%NAMEFROM%% says %%PROP%% to, @%%NAMETO%%",
+"notdjprop": "/me ",
 
 
 "eatcandy": "/me [qtbot] eats a candy.",
