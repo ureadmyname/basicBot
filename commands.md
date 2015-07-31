@@ -130,7 +130,6 @@ User
 |!link | | when the user is the DJ, give a link to the current song |
 |!op | | links to the OverPlayed list |
 |!ping | | pong! |
-|!plugcolor | | sends a link to the plugcolor script |
 |!props | (@user) | give "props" to someone for playing a great song |
 |!question | | link to our weekly question that gives you input towards changing our community |
 |!ref | | the "I.T" support command for plug.dj |
