@@ -4,13 +4,6 @@ Commands:
 X specifies a number  
 Arguments between ( ) are optional
 
-Co-Host
--------
-
-|Command | Arguments |  Description |
-|:------:|:---------:|:--------------------------------------:|
-|!roulette | | start a roulette |
-
 
 Manager+
 --------
@@ -43,6 +36,7 @@ Manager+
 |!move | @user (X) | moves user to position X on the waitlist, default is position 1 |
 |!refresh | | refreshes the browser of whoever runs the bot |
 |!remove | @user | remove user from the waitlist |
+|!roulette | | start a roulette |
 |!songstats | | toggle song statistics |
 |!unlock | | unlock the waitlist |
 |!usercmdcd | X | set the cooldown on commands by grey users |
