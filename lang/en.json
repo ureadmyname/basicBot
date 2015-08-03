@@ -382,9 +382,10 @@
 "selfcookie": "\/me @%%NAME%%, you're a bit greedy, aren't you? Giving cookies to yourself, bah. Share some with other people!",
 "cookie": "\/me @%%NAMETO%%, %%NAMEFROM%% %%COOKIE%%",
 
-
+"eatprop": "/me ",
+"nouserprop": "/em [qtbot] doesn't see %%NAME%% in this room.",
+"selfprop": "\/me [qtbot] @%%NAME%%, Giving props to yourself, How about giving other people props for playing their good music :)",
 "prop": "\/me [qtbot] Song Props: @%%NAMEFROM%% says %%PROP%%, to @%%NAMETO%%.",
-
 
 "eatcandy": "/me [qtbot] eats a candy.",
 "nousercandy": "/em [qtbot] doesn't see %%NAME%% in this room.",
