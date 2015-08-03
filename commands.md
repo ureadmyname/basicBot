@@ -125,7 +125,7 @@ User
 |!link | | when the user is the DJ, give a link to the current song |
 |!op | | links to the OverPlayed list |
 |!ping | | pong! |
-|!props | (@user) | give "props" to someone for playing a great song |
+|!props | | give a song "props" made to show appreciation to a good song |
 |!question | | link to our weekly question that gives you input towards changing our community |
 |!ref | | the "I.T" support command for plug.dj |
 |!rouletteinfo | | explains the roulette to people who don't know what it is |
