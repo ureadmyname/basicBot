@@ -2904,7 +2904,7 @@ return API.moderateForceSkip();
                             }
                             else {
                             	var dj = API.getDJ();
-                                return API.sendChat(subChat(basicBot.chat.prop, {namefrom: user.username, prop: this.getProp(), nameto: dj.username}));
+                                return API.sendChat(subChat(basicBot.chat.prop, {namefrom: chat.un, prop: this.getProp(), nameto: dj.username}));
                             }
                         }
                     }
