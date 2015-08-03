@@ -2887,8 +2887,8 @@ return API.moderateForceSkip();
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                             else {
-                            	var dj = API.getDJ().username;
-                                return API.sendChat(subChat(basicBot.chat.prop, {namefrom: user.username, djname: dj, prop: this.getProp()}));
+                            	var dj = API.getDJ();
+                                return API.sendChat(subChat(basicBot.chat.prop, {namefrom: user.username, prop: this.getProp(), nameto: dj.username}));
                             }
                         }
                     },
