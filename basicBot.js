@@ -2878,7 +2878,7 @@ return API.moderateForceSkip();
             propCommand: {
                 command: 'props',
                 rank: 'user',
-                type: 'startsWith',
+                type: 'exact',
                 getProp: function (chat) {
                     var p = Math.floor(Math.random() * basicBot.chat.props.length);
                     return basicBot.chat.props[p];
@@ -2904,7 +2904,7 @@ return API.moderateForceSkip();
                                 return API.sendChat(subChat(basicBot.chat.selfprop, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.prop, {nameto: user.username, namefrom: chat.un, prop: this.getProp()}));
+                                return API.sendChat(subChat(basicBot.chat.prop, {namefrom: user.username, djname: API.getDJ().username, prop: this.getProp()}));
                             }
                         }
                     }
