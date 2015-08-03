@@ -2888,6 +2888,7 @@ return API.moderateForceSkip();
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                             else {
                             	var dj = API.getDJ();
+                            	var msg = chat.message;
                             	var name = msg.substring(space + 2);
                             	var user = basicBot.userUtilities.lookupUserName(name);
                                 return API.sendChat(subChat(basicBot.chat.prop, {namefrom: user.username, prop: this.getProp(), nameto: dj.username}));
