@@ -2890,6 +2890,7 @@ return API.moderateForceSkip();
                             	var dj = API.getDJ();
                             	var msg = chat.message;
                             	var name = msg.substring(space + 2);
+                            	var space = msg.indexOf(' ');
                             	var user = basicBot.userUtilities.lookupUserName(name);
                                 return API.sendChat(subChat(basicBot.chat.prop, {namefrom: user.username, prop: this.getProp(), nameto: dj.username}));
                             }
