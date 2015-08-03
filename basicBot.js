@@ -2878,7 +2878,7 @@ return API.moderateForceSkip();
             propCommand: {
                 command: 'props',
                 rank: 'user',
-                type: 'exact',
+                type: 'startsWith',
                 getProp: function (chat) {
                     var p = Math.floor(Math.random() * basicBot.chat.props.length);
                     return basicBot.chat.props[p];
