@@ -2889,27 +2889,20 @@ return API.moderateForceSkip();
                     else {
                     	var msg = chat.message;
                     	var space = msg.indexOf(' ');
-                    	if (space === -1) {
-                            API.sendChat(basicBot.chat.eatprop);
-                            return false;
                     	}
                     	else {
                             var name = msg.substring(space + 2);
                     	    var user = basicBot.userUtilities.lookupUserName(name);
-                            if (user === false || !user.inRoom) {
-                                return API.sendChat(subChat(basicBot.chat.nouserprop, {name: name}));
-                            }
                             else if (user.username === chat.un) {
-                                return API.sendChat(subChat(basicBot.chat.selfprop, {name: name}));
+                            return API.sendChat(subChat(basicBot.chat.selfprop, {name: name}));
                             }
-                            else {
-                            	var dj = API.getDJ();
-                                return API.sendChat(subChat(basicBot.chat.prop, {namefrom: chat.un, prop: this.getProp(), nameto: dj.username}));
-                            }
-                        }
-                    }
-                }
-            },
+                        else {
+                            var dj = API.getDJ();
+                            return API.sendChat(subChat(basicBot.chat.prop, {namefrom: chat.un, prop: this.getProp(), nameto: dj.username}));
+                          }
+                      }
+                  }
+              },
 
             pingCommand: {
                 command: 'ping',
