@@ -3110,7 +3110,7 @@ return API.moderateForceSkip();
                                 return API.sendChat(subChat(basicBot.chat.nouserk1tt, {name: name}));
                             }
                             else if (user.username === chat.un) {
-                                return API.sendChat(subChat(basicBot.chat.selfk1tt, {nameto: user.username, k1tts: this.getK1tt()}));
+                                return API.sendChat(subChat(basicBot.chat.selfk1tt, {nameto: user.username, k1tt: this.getK1tt()}));
                             }
                             else {
                                 return API.sendChat(subChat(basicBot.chat.k1tt, {nameto: user.username, namefrom: chat.un, k1tt: this.getK1tt()}));
