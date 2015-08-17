@@ -473,7 +473,7 @@
 
 "eatk1tt": "/me [qtbot] takes a shot.",
 "nouserk1tt": "/em [qtbot] doesn't see %%NAME%% in this room.",
-"selfk1tt": "/me [qtbot] @%%NAME%%, Buying yourself a shot, How about you buy a round for once :)",
+"selfk1tt": "/me [qtbot] @%%NAMETO%%, You buy yourself a shot; %%KITT%%",
 "k1tt": "/me [qtbot]: @%%NAMEFROM%% buys @%%NAMETO%% a shot, %%k1tt%%!",
 
 "eatfortune": "/me ",
