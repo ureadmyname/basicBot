@@ -3090,8 +3090,8 @@ return API.moderateForceSkip();
                 rank: 'user',
                 type: 'startsWith',
                 getK1tt: function (chat) {
-                    var kitt = Math.floor(Math.random() * basicBot.chat.k1tt.length);
-                    return basicBot.chat.k1tt[kitt];
+                    var kitt = Math.floor(Math.random() * basicBot.chat.k1tts.length);
+                    return basicBot.chat.k1tts[kitt];
                 },
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
