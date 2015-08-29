@@ -1699,13 +1699,13 @@ console.log(basicBot.room.name);
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        if (basicBot.room.autoskip) {
-                            basicBot.room.autoskip = !basicBot.room.autoskip;
-                            clearTimeout(basicBot.room.autoskipTimer);
+                        if (basicBot.settings.autoskip) {
+                            basicBot.settings.autoskip = !basicBot.settings.autoskip;
+                            clearTimeout(basicBot.settings.autoskipTimer);
                             return API.sendChat(subChat(basicBot.chat.toggleoff, {name: chat.un, 'function': basicBot.chat.autoskip}));
                         }
                         else {
-                            basicBot.room.autoskip = !basicBot.room.autoskip;
+                            basicBot.settings.autoskip = !basicBot.settings.autoskip;
                             return API.sendChat(subChat(basicBot.chat.toggleon, {name: chat.un, 'function': basicBot.chat.autoskip}));
                         }
                     }
@@ -1857,7 +1857,7 @@ console.log(basicBot.room.name);
 
             bouncerPlusCommand: {
                 command: 'bouncer+',
-                rank: 'mod',
+                rank: 'manager',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -3323,7 +3323,7 @@ console.log(basicBot.room.name);
                         msg += '. ';
 
                         msg += basicBot.chat.autoskip + ': ';
-                        if (basicBot.room.autoskip) msg += 'ON';
+                        if (basicBot.settings.autoskip) msg += 'ON';
                         else msg += 'OFF';
                         msg += '. ';
 
