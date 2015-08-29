@@ -1478,6 +1478,43 @@ return API.moderateForceSkip();
                 },
              **/
 
+                acronymCommand: {
+                command: 'acronym',
+                rank: 'user',
+                type: 'exact',
+                getLetters: function (chat) {
+                var l = Math.floor(Math.random() * basicBot.chat.letter1.length);
+                return basicBot.chat.letter1[l];
+                },
+                getLetters2: function (chat) {
+                var le = Math.floor(Math.random() * basicBot.chat.letter2.length);
+                return basicBot.chat.letter2[le];
+                },
+                getLetters3: function (chat) {
+                var len = Math.floor(Math.random() * basicBot.chat.letter3.length);
+                return basicBot.chat.letter3[len];
+                },
+                getLetters4: function (chat) {
+                var leng = Math.floor(Math.random() * basicBot.chat.letter4.length);
+                return basicBot.chat.letter4[leng];
+                },
+                getLetters5: function (chat) {
+                var lengt = Math.floor(Math.random() * basicBot.chat.letter5.length);
+                return basicBot.chat.letter5[lengt];
+                },
+                getLetters6: function (chat) {
+                var length = Math.floor(Math.random() * basicBot.chat.letter6.length);
+                return basicBot.chat.letter6[length];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                    return API.sendChat(subChat(basicBot.chat.letter, {letter: this.getLetters, letter2: this.getLetters2, letter3: this.getLetters3, letter4: this.getLetters4, letter5: this.getLetters5, letter6: this.getLetters6}));
+                              }
+                          }
+                      },
+
             activeCommand: {
                 command: 'active',
                 rank: 'bouncer',
@@ -1723,6 +1760,9 @@ return API.moderateForceSkip();
                         var name = msg.substr(cmd.length + 2);
                         var user = basicBot.userUtilities.lookupUserName(name);
                         if (typeof user === 'boolean') return API.sendChat(subChat(basicBot.chat.invaliduserspecified, {name: chat.un}));
+                        var permFrom = basicBot.userUtilities.getPermission(chat.uid);
+                        var permUser = basicBot.userUtilities.getPermission(user.id);
+                        if (permUser >= permFrom) return void(0);
                         API.moderateBanUser(user.id, 1, API.BAN.DAY);
                     }
                 }
@@ -1918,43 +1958,6 @@ return API.moderateForceSkip();
                     }
                 }
             },
-            
-                acronymCommand: {
-                command: 'acronym',
-                rank: 'user',
-                type: 'exact',
-                getLetters: function (chat) {
-                var l = Math.floor(Math.random() * basicBot.chat.letter1.length);
-                return basicBot.chat.letter1[l];
-                },
-                getLetters2: function (chat) {
-                var le = Math.floor(Math.random() * basicBot.chat.letter2.length);
-                return basicBot.chat.letter2[le];
-                },
-                getLetters3: function (chat) {
-                var len = Math.floor(Math.random() * basicBot.chat.letter3.length);
-                return basicBot.chat.letter3[len];
-                },
-                getLetters4: function (chat) {
-                var leng = Math.floor(Math.random() * basicBot.chat.letter4.length);
-                return basicBot.chat.letter4[leng];
-                },
-                getLetters5: function (chat) {
-                var lengt = Math.floor(Math.random() * basicBot.chat.letter5.length);
-                return basicBot.chat.letter5[lengt];
-                },
-                getLetters6: function (chat) {
-                var length = Math.floor(Math.random() * basicBot.chat.letter6.length);
-                return basicBot.chat.letter6[length];
-                },
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                    return API.sendChat(subChat(basicBot.chat.letter, {letter: this.getLetters, letter2: this.getLetters2, letter3: this.getLetters3, letter4: this.getLetters4, letter5: this.getLetters5, letter6: this.getLetters6}));
-                              }
-                          }
-                      },
 
             cookieCommand: {
                 command: 'cookie',
@@ -2067,6 +2070,30 @@ return API.moderateForceSkip();
                         if (typeof user === 'boolean') return API.sendChat(subChat(basicBot.chat.invaliduserspecified, {name: chat.un}));
                         var toChat = basicBot.userUtilities.dclookup(user.id);
                         API.sendChat(toChat);
+                    }
+                }
+            },
+
+            deletechatCommand: {
+                command: 'deletechat',
+                rank: 'mod',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        if (msg.length === cmd.length) return API.sendChat(subChat(basicBot.chat.nouserspecified, {name: chat.un}));
+                        var name = msg.substring(cmd.length + 2);
+                        var user = basicBot.userUtilities.lookupUserName(name);
+                        if (typeof user === 'boolean') return API.sendChat(subChat(basicBot.chat.invaliduserspecified, {name: chat.un}));
+                        for (var i = 1; i < basicBot.room.chatMessages.length; i++) {
+                          if (basicBot.room.chatMessages[i].indexOf(user.id) > -1){
+                            API.moderateDeleteChat(basicBot.room.chatMessages[i][0]);
+                            basicBot.room.chatMessages[i].splice(0);
+                          }
+                        }
+                        API.sendChat(subChat(basicBot.chat.deletechat, {name: chat.un, username: name}));
                     }
                 }
             },
@@ -2562,7 +2589,7 @@ return API.moderateForceSkip();
                         if (dj === chat.uid) isDj = true;
                         if (perm >= 1 || isDj) {
                             if (media.format === 1) {
-                                var linkToSong = "http://youtu.be/" + media.cid;
+                                var linkToSong = "https://youtu.be/" + media.cid;
                                 API.sendChat(subChat(basicBot.chat.songlink, {name: from, link: linkToSong}));
                             }
                             if (media.format === 2) {
