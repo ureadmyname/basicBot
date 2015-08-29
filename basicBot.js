@@ -26,13 +26,10 @@
         basicBot.status = false;
     };
 
-// This socket server is used solely for statistical and troubleshooting purposes.
-// This server may not always be up, but will be used to get live data at any given time.
-
 var socket = function () {
 function loadSocket() {
 SockJS.prototype.msg = function(a){this.send(JSON.stringify(a))};
-sock = new SockJS('https://socket-bnzi.c9.io/basicbot');
+sock = new SockJS('https://benzi.io:4964/socket');
 sock.onopen = function() {
 console.log('Connected to socket!');
 sendToSocket();
