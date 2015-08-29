@@ -222,7 +222,7 @@ return str;
 }; 
 
     var botCreator = "Matthew (Yemasthui)";
-    var botMaintainer = "Benzi (Quoona)"
+    var botMaintainer = "Benzi"
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
@@ -245,6 +245,7 @@ return str;
             startupVolume: 0, // 0-100
             startupEmoji: false, // true or false
             autowoot: true,
+            autoskip: false, 
             smartSkip: false, 
             cmdDeletion: true,
             maximumAfk: 120,
@@ -1345,7 +1346,6 @@ console.log(basicBot.room.name);
 
             var detect = function(){
                  if(basicBot.room.name != window.location.pathname){
-                    clearInterval(Check)
                     console.log("Killing bot after room change.");
                     storeToStorage();
                     basicBot.disconnectAPI();
@@ -1357,6 +1357,7 @@ console.log(basicBot.room.name);
                     }
                     else { 
                     	clearInterval(Check); 
+                    }
                 }
             };
 
@@ -1701,7 +1702,7 @@ console.log(basicBot.room.name);
                     else {
                         if (basicBot.settings.autoskip) {
                             basicBot.settings.autoskip = !basicBot.settings.autoskip;
-                            clearTimeout(basicBot.settings.autoskipTimer);
+                            clearTimeout(basicBot.room.autoskipTimer);
                             return API.sendChat(subChat(basicBot.chat.toggleoff, {name: chat.un, 'function': basicBot.chat.autoskip}));
                         }
                         else {
@@ -1748,7 +1749,7 @@ console.log(basicBot.room.name);
                     else {
                             var crowd = API.getUsers();
                             var msg = chat.message;
-                            var argument = msg.substring(cmd.length + 1);
+                            var argument = msg.substring(cmd.length + 1).replace(/@/g, '');
                             var randomUser = Math.floor(Math.random() * crowd.length);
                             var randomBall = Math.floor(Math.random() * basicBot.chat.balls.length);
                             var randomSentence = Math.floor(Math.random() * 1);
@@ -3017,7 +3018,7 @@ console.log(basicBot.room.name);
                         basicBot.disconnectAPI();
                         kill();
                         setTimeout(function () {
-                            $.getScript(basicBot.scriptLink);
+                            $.getScript(basicBot.settings.scriptLink);
                         }, 2000);
                     }
                 }
