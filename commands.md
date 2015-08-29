@@ -118,6 +118,7 @@ User
 |!fortune | | get or give a fortune from qtbot the fortune teller |
 |!ghostbuster | @user | checks if user is ghosting |
 |!gif | (message) | returns a gif (from giphy) related to the tag provided, Returns a random gif if no tags are provided |
+|!guidelines | | sends the list for what is expected of a staff member in this community |
 |!help | | links to an image to help get people started on plug **NOT AVAILABLE FOR THE MOMENT**|
 |!illuminati | | plug.dj is illuminati confirmed! |
 |!join | | join the roulette if it's up |
