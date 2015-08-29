@@ -303,7 +303,7 @@
 "Three Wise Men"
 ],
 "activefor": "I have been active for %%TIME%%.",
-"activeusersintime": "\/me [@%%NAME%% There have been %%AMOUNT%% users chatting in the past %%TIME%% minutes.",
+"activeusersintime": "\/me [@%%NAME%%] There have been %%AMOUNT%% users chatting in the past %%TIME%% minutes.",
 "addbotwaitlist": "\/me @%%NAME%%, don't try to add me to the waitlist, please.",
 "adding": "\/me Added @%%NAME%% to the queue. Current queue: %%POSITION%%.",
 "adfly": "\/me @%%NAME%%, please change your autowoot program. We suggest PlugCubed: http:\/\/plugcubed.net\/",
