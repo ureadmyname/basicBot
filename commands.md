@@ -25,7 +25,7 @@ Manager+
 |!clearchat | |clears the chat |
 |!cycle | | toggle DJ cycle |
 |!cycletimer | X | set the maximum DJ cycle time for when cycleguard is enabled |
-|!deletechat | @user | delete all the chats by a certain user ***NOT WORKING!*** |
+|!deletechat | @user | delete all the chats by a certain user |
 |!killtroll | | what all trolls deserve muwahahahah |
 |!language | (language) | specify the language you would like the bot to use |
 |!lock | | lock the waitlist |
