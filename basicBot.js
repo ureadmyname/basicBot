@@ -2311,8 +2311,8 @@ console.log(basicBot.room.name);
                             function get_id(api_key, fixedtag, func)
                             {
                                 $.getJSON(
-                                    "https://tv.giphy.com/v1/gifs/random?", 
-                                    { 
+                                    "https://tv.giphy.com/v1/gifs/random?",
+                                    {
                                         "format": "json",
                                         "api_key": api_key,
                                         "rating": rating,
@@ -2341,8 +2341,8 @@ console.log(basicBot.room.name);
                             function get_random_id(api_key, func)
                             {
                                 $.getJSON(
-                                    "https://tv.giphy.com/v1/gifs/random?", 
-                                    { 
+                                    "https://tv.giphy.com/v1/gifs/random?",
+                                    {
                                         "format": "json",
                                         "api_key": api_key,
                                         "rating": rating
