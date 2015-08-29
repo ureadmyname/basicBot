@@ -147,7 +147,7 @@ return sock.msg(data);
                 basicBot.room.afkList = room.afkList;
                 basicBot.room.historyList = room.historyList;
                 basicBot.room.mutedUsers = room.mutedUsers;
-                basicBot.room.autoskip = room.autoskip;
+                // basicBot.room.autoskip = room.autoskip;
                 basicBot.room.roomstats = room.roomstats;
                 basicBot.room.messages = room.messages;
                 basicBot.room.queue = room.queue;
@@ -200,7 +200,7 @@ String.prototype.startsWith = function(str) {
 return this.substring(0, str.length) === str;
 };
 
-    var linkFixer = function (msg) {
+    function linkFixer(msg) {
         var parts = msg.splitBetween('<a href="', '<\/a>');
         for (var i = 1; i < parts.length; i = i + 2) {
             var link = parts[i].split('"')[0];
@@ -213,7 +213,7 @@ return this.substring(0, str.length) === str;
         return m;
     };
 
-var decodeEntities = function (s) {
+	    function decodeEntities(s) {
 var str, temp = document.createElement('p');
 temp.innerHTML = s;
 str = temp.textContent || temp.innerText;
@@ -300,6 +300,8 @@ return str;
             }
         },
         room: {
+            name: null,
+	    chatMessages: [], 
             users: [],
             afkList: [],
             mutedUsers: [],
@@ -308,7 +310,7 @@ return str;
             usercommand: true,
             allcommand: true,
             afkInterval: null,
-            autoskip: false,
+            //autoskip: false,
             autoskipTimer: null,
             autodisableInterval: null,
             autodisableFunc: function () {
@@ -530,7 +532,7 @@ return str;
                     }
                 }
                 var newPosition = user.lastDC.position - songsPassed - afksRemoved;
-                if (newPosition <= 0) newPosition = 1;
+                if (newPosition <= 0) return subChat(basicBot.chat.notdisconnected, {name: name});
                 var msg = subChat(basicBot.chat.valid, {name: basicBot.userUtilities.getUser(user).username, time: time, position: newPosition});
                 basicBot.userUtilities.moveUser(user.id, newPosition, true);
                 return msg;
@@ -815,6 +817,9 @@ basicBot.roomUtilities.booth.unlockBooth();
             chat.message = linkFixer(chat.message);
             chat.message = decodeEntities(chat.message); 
             chat.message = chat.message.trim();
+            
+            basicBot.room.chatMessages.push([chat.cid, chat.message, chat.sub, chat.timestamp, chat.type, chat.uid, chat.un]); 
+            
             for (var i = 0; i < basicBot.room.users.length; i++) {
                 if (basicBot.room.users[i].id === chat.uid) {
                     basicBot.userUtilities.setLastActivity(basicBot.room.users[i]);
@@ -1045,7 +1050,7 @@ return API.moderateForceSkip();
                 user.ownSong = false;
             }
             clearTimeout(basicBot.room.autoskipTimer);
-            if (basicBot.room.autoskip) {
+            if (basicBot.settings.autoskip) {
                 var remaining = obj.media.duration * 1000;
                 var startcid = API.getMedia().cid; 
                 basicBot.room.autoskipTimer = setTimeout(function () {
@@ -1333,11 +1338,13 @@ return API.moderateForceSkip();
                 })
             };
 
-            var roomURL = window.location.pathname;
+            basicBot.room.name = window.location.pathname
             var Check;
 
+console.log(basicBot.room.name);
+
             var detect = function(){
-                if(roomURL != window.location.pathname){
+                 if(basicBot.room.name != window.location.pathname){
                     clearInterval(Check)
                     console.log("Killing bot after room change.");
                     storeToStorage();
@@ -1345,10 +1352,15 @@ return API.moderateForceSkip();
                     setTimeout(function () {
                         kill();
                     }, 1000);
+                    if (basicBot.settings.roomLock){ 
+                    	window.location = 'https://plug.dj' + basicBot.room.name; 
+                    }
+                    else { 
+                    	clearInterval(Check); 
                 }
             };
 
-            Check = setInterval(function(){ detect() }, 100);
+            Check = setInterval(function(){ detect() }, 2000);
 
             retrieveSettings();
             retrieveFromStorage();
