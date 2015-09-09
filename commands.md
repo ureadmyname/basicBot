@@ -134,7 +134,7 @@ User
 |!rules | | links to the rules |
 |!shots | (@user) | give someone a shot |
 |!staff | | small things that will improve your chances of getting staff in our community |
-|!shuffle | | show the meaning of Wednesday and Friday |
+|!shuffle | | show the meaning of Monday and Friday |
 |!theme | | links to the room's theme |
 |!twitch | | "theqtpi" twitch link |
 |!twitchlive | | "theqtpi" twitch link when she is live |
