@@ -3334,8 +3334,6 @@ console.log(basicBot.room.name);
                         var since = basicBot.roomUtilities.msToStr(durationOnline);
                         msg += subChat(basicBot.chat.activefor, {time: since});
 
-                        if (msg.length > 241){
-                        var split = msg.match(/.{1,241}/g);
                         if (msg.length > 250){
                         var split = msg.match(/.{1,250}/g);
                              for (var i = 0; i < split.length; i++) {
