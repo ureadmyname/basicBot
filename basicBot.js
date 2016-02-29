@@ -2967,7 +2967,6 @@ console.log(basicBot.room.name);
                     	    var msg = chat.message;
                     	    var space = msg.indexOf(' ');
                             return API.sendChat(subChat(basicBot.chat.prop{namefrom: chat.un, dj: dj, prop: this.getProp()}));
-                            return false;
                                 }
                     	    }
                         },
