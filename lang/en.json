@@ -165,15 +165,16 @@
 "You will receive a fortune."
 ],
 "props": [
-"This song = 11/10 IGN.",
-"This track is amazing.",
+"This song = 11/10 IGN,",
+"This track is amazing,",
 "Love this song <3",
-"Excellent tune.",
-"Awesome track.",
-"Awesometastic.",
-"Amazing song.",
-"Great song.",
-"Nice Play."
+"Excellent tune,",
+"Awesome track,",
+"Awesometastic,",
+"Amazing song,",
+"Great song,",
+"Awwww fukin sick cunt,",
+"Nice Play,"
 ],
 "shots": [
 "Slippery Nipple",
@@ -455,7 +456,7 @@
 "selfcookie": "\/me @%%NAME%%, you're a bit greedy, aren't you? Giving cookies to yourself, bah. Share some with other people!",
 "cookie": "\/me @%%NAMETO%%, %%NAMEFROM%% %%COOKIE%%",
 
-"prop": "\/me %%NAMEFROM%% says %%PROP%% to %%DJ%%",
+"prop": "\/me Song props: %%NAMEFROM%% says %%PROP%% to %%DJ%%.",
 
 "eatcandy": "/me [qtbot] eats a candy.",
 "nousercandy": "/em [qtbot] doesn't see %%NAME%% in this room.",
