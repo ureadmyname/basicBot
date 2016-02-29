@@ -2949,11 +2949,11 @@ console.log(basicBot.room.name);
                 }
             },
 
-            propCommand: {
+            propsCommand: {
                 command: 'props',
                 rank: 'user',
                 type: 'exact',
-                getProp: function (chat) {
+                getProps: function (chat) {
                     var p = Math.floor(Math.random() * basicBot.chat.props.length);
                     return basicBot.chat.props[p];
                 },
@@ -2962,11 +2962,11 @@ console.log(basicBot.room.name);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                         else {
                             var msg = chat.message;
+                            var space = msg.indexOf(' ');
                             var name = msg.substring(space + 2);
                             var user = basicBot.userUtilities.lookupUserName(name);
                             var dj = API.getDJ().username;
-                    	    var space = msg.indexOf(' ');
-                            return API.sendChat(subChat(basicBot.chat.prop{namefrom: chat.un, dj: dj, prop: this.getProp()}));
+                            return API.sendChat(subChat(basicBot.chat.prop, {namefrom: chat.un, dj: dj, prop: this.getProps()}));
                                 }
                     	    }
                         },
