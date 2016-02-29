@@ -2961,10 +2961,10 @@ console.log(basicBot.room.name);
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                         else {
-                            var dj = API.getDJ().username;
+                            var msg = chat.message;
                             var name = msg.substring(space + 2);
                             var user = basicBot.userUtilities.lookupUserName(name);
-                    	    var msg = chat.message;
+                            var dj = API.getDJ().username;
                     	    var space = msg.indexOf(' ');
                             return API.sendChat(subChat(basicBot.chat.prop{namefrom: chat.un, dj: dj, prop: this.getProp()}));
                                 }
