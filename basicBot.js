@@ -2952,7 +2952,7 @@ console.log(basicBot.room.name);
             propCommand: {
                 command: 'props',
                 rank: 'user',
-                type: 'startsWith',
+                type: 'exact',
                 getProp: function (chat) {
                     var p = Math.floor(Math.random() * basicBot.chat.props.length);
                     return basicBot.chat.props[p];
@@ -2961,17 +2961,17 @@ console.log(basicBot.room.name);
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                         else {
+                            var dj = API.getDJ().username;
+                            var name = msg.substring(space + 2);
+                            var user = basicBot.userUtilities.lookupUserName(name);
                     	    var msg = chat.message;
                     	    var space = msg.indexOf(' ');
-                    	    if (space === -1) {
-                            API.sendChat(basicBot.chat.selfprop);
+                            return API.sendChat(subChat(basicBot.chat.prop{namefrom: chat.un, dj: dj, prop: this.getProp()}));
                             return false;
-                            var name = msg.substring(space + 2);
-                    	    var user = basicBot.userUtilities.lookupUserName(name);
-                            return API.sendChat(subChat(basicBot.chat.prop, {namefrom: chat.un, prop: this.getProp(), nameto: dj.username}));
-                          }
-                      }
-                 },
+                                }
+                    	    }
+                        }
+                   },
 
             pingCommand: {
                 command: 'ping',
