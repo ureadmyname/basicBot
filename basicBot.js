@@ -2970,8 +2970,7 @@ console.log(basicBot.room.name);
                             return false;
                                 }
                     	    }
-                        }
-                   },
+                        },
 
             pingCommand: {
                 command: 'ping',
