@@ -111,6 +111,7 @@ User
 |!dcinfo | | information about the dc command |
 |!dclookup / !dc | | use dclookup on yourself |
 |!djcycleinfo | | explains what the djcycle setting does |
+|!dubtrack | | check out our other room on dubtrack.fm so you can still jam with us when plug is down |
 |!emoji | | a link to a list with emoji's |
 |!eta | | shows how long before you reach the booth |
 |!fav | | remind people to favorite the room |
@@ -135,6 +136,7 @@ User
 |!shots | (@user) | give someone a shot |
 |!staff | | small things that will improve your chances of getting staff in our community |
 |!shuffle | | show the meaning of Monday and Friday |
+|!steam | | a link to our plugdj steam community so you can come game with us |
 |!theme | | links to the room's theme |
 |!twitch | | "theqtpi" twitch link |
 |!twitchlive | | "theqtpi" twitch link when she is live |
