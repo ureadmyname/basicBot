@@ -111,6 +111,7 @@ User
 |!cookie | (@user) | give a cookie to someone |
 |!dcinfo | | information about the dc command |
 |!dclookup / !dc | | use dclookup on yourself |
+|!discord | | links to our discord room where you can come and talk to us |
 |!djcycleinfo | | explains what the djcycle setting does |
 |!dubtrack | | check out our other room on dubtrack.fm so you can still jam with us when plug is down |
 |!emoji | | a link to a list with emoji's |
