@@ -105,6 +105,7 @@ User
 |!abuse | | explains how to use the !dc command properly, rather than abusing it |
 |!acronym | | 6 random letters will be made, try to make an acronym out of them |
 |!allbotstuff | | a link to everything to do with the bot |
+|!appear | | link to our appear.in room, come chat and show your face if you like |
 |!autowoot | | links to PlugCubed, the advised script/plugin to use for autowooting |
 |!ba | | explains the Brand Ambassador rank |
 |!candy | (@user) | give a random candy to a user |
