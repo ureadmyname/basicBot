@@ -13,6 +13,7 @@ Manager+
 |!add | @user | add user to the waitlist |
 |!afklimit | X | sets the maximum afk time |
 |!afkremoval | | toggles the afk check |
+|!autoappear | | make !appear be displayed on a timer |
 |!autodubtrack | | make !dubtrack be displayed on a timer |
 |!autofav | | make !fav be displayed on a timer |
 |!autoquestion | | make !question be displayed on a timer |
