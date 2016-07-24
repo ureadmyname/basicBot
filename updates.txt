@@ -1,6 +1,7 @@
 QTBOT and Github updates:
 
 7/25/16
-updated "staff.md"
+added !admin command to the extension.js
 
-reminder: add newer dates upwards.
+7/25/16
+updated "staff.md"
