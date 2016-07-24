@@ -2,3 +2,5 @@ QTBOT and Github updates:
 
 7/25/16
 updated "staff.md"
+
+reminder: add newer dates upwards.
