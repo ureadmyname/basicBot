@@ -1,6 +1,9 @@
 QTBOT and Github updates:
 
 7/25/16
+changed autowoot command response to RCS instead of plugcubed in en.json
+
+7/25/16
 added !admin command to the extension.js
 
 7/25/16
