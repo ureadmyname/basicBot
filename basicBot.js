@@ -2970,6 +2970,28 @@ console.log(basicBot.room.name);
                                 }
                     	    }
                         },
+                        
+                propscuntCommand: {
+                command: 'propscunt',
+                rank: 'user',
+                type: 'exact',
+                getPropscunt: function (chat) {
+                    var p = Math.floor(Math.random() * basicBot.chat.propscunt.length);
+                    return basicBot.chat.propscunt[p];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                        else {
+                            var msg = chat.message;
+                            var space = msg.indexOf(' ');
+                            var name = msg.substring(space + 2);
+                            var user = basicBot.userUtilities.lookupUserName(name);
+                            var dj = API.getDJ().username;
+                            return API.sendChat(subChat(basicBot.chat.propcunt, {namefrom: chat.un, dj: dj, propcunt: this.getPropscunt()}));
+                                }
+                    	    }
+                        },
 
             pingCommand: {
                 command: 'ping',
