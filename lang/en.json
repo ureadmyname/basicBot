@@ -462,7 +462,7 @@
 "cookie": "\/me @%%NAMETO%%, %%NAMEFROM%% %%COOKIE%%",
 
 "prop": "\/me Song props: %%NAMEFROM%% says, %%PROP%% to %%DJ%%.",
-"propcunt": "\/me Song props: %%NAMEFROM%% says, %%PROP%% to %%DJ%%.",
+"propcunt": "\/me Song props: %%NAMEFROM%% says, %%PROPCUNT%% to %%DJ%%.",
 
 "eatcandy": "/me [qtbot] eats a candy.",
 "nousercandy": "/em [qtbot] doesn't see %%NAME%% in this room.",
