@@ -180,6 +180,9 @@
 "killer",
 "yo, this is some dope shit"
 ],
+"propscunt": [
+"awwww fukin sick cunt"
+],
 "shots": [
 "Slippery Nipple",
 "Tequila Slammer",
@@ -453,14 +456,13 @@
 "youtube": "\/me [%%NAME%%] Subscribe to us on youtube: %%LINK%%",
 
 
-
-
 "eatcookie": "\/me eats a cookie.",
 "nousercookie": "\/em doesn't see %%NAME%% in room and eats a cookie himself.",
 "selfcookie": "\/me @%%NAME%%, you're a bit greedy, aren't you? Giving cookies to yourself, bah. Share some with other people!",
 "cookie": "\/me @%%NAMETO%%, %%NAMEFROM%% %%COOKIE%%",
 
 "prop": "\/me Song props: %%NAMEFROM%% says, %%PROP%% to %%DJ%%.",
+"propcunt": "\/me Song props: %%NAMEFROM%% says, %%PROP%% to %%DJ%%.",
 
 "eatcandy": "/me [qtbot] eats a candy.",
 "nousercandy": "/em [qtbot] doesn't see %%NAME%% in this room.",
