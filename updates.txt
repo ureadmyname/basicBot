@@ -2,6 +2,7 @@ QTBOT and Github updates:
 
 7/31/16
 added !propscunt command
+also plans to !update command
 
 7/25/16
 changed autowoot command response to RCS instead of plugcubed in en.json
