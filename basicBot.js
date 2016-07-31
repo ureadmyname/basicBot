@@ -226,19 +226,19 @@ return str;
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
-        version: "3.14.69.1337.420",
+        version: "4.20",
         status: false,
-        name: "basicBot",
+        name: "nullBot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/ureadmyname/basicBot/master/basicBot.js",
-        cmdLink: "http://git.io/ve1L9",
+        cmdLink: "https://git.io/vKvpm",
         chatLink: "https://rawgit.com/ureadmyname/basicBot/master/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "basicBot",
+            botName: "nullBot",
             language: "english",
             chatLink: "https://rawgit.com/ureadmyname/basicBot/master/lang/en.json",
             scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
@@ -262,7 +262,7 @@ return str;
             maximumCycletime: 10,
             voteSkip: false,
             voteSkipLimit: 10,
-            historySkip: false,
+            historySkip: true,
             timeGuard: true,
             maximumSongLength: 10,
             autodisable: true,
@@ -290,12 +290,12 @@ return str;
             rulesLink: null,
             themeLink: null,
             fbLink: null,
-            youtubeLink: null,
-            website: null,
+            youtubeLink: "https://www.youtube.com/c/tehsmileys",
+            website: "https://www.twitch.tv/tehsmileys",
             intervalMessages: [],
             messageInterval: 5,
-            songstats: true,
-            commandLiteral: "!",
+            songstats: false,
+            commandLiteral: "$",
             blacklists: {
                 NSFW: "https://rawgit.com/ureadmyname/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
                 OP: "https://rawgit.com/ureadmyname/basicBot-customization/master/blacklists/ExampleOPlist.json",
@@ -3797,6 +3797,41 @@ console.log(basicBot.room.name);
                     else {
                         if (typeof basicBot.settings.website === "string")
                             API.sendChat(subChat(basicBot.chat.website, {link: basicBot.settings.website}));
+                    }
+                }
+            },
+
+            weedCommand: {
+                command: 'weed',
+                rank: 'user',
+                type: 'startsWith',
+                getWeeds: function (chat) {
+                    var sho = Math.floor(Math.random() * basicBot.chat.weeds.length);
+                    return basicBot.chat.weeds[sho];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(basicBot.chat.eatweed);
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = basicBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(basicBot.chat.nouserweed, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(basicBot.chat.selfweed, {name: name}));
+                            }
+                            else {
+                                return API.sendChat(subChat(basicBot.chat.weed, {nameto: user.username, namefrom: chat.un, weed: this.getWeeds()}));
+                            }
+                        }
                     }
                 }
             },
