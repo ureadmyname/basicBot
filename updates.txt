@@ -1,8 +1,11 @@
 QTBOT and Github updates:
 
+8/5/16
+changed weekly question name to community question
+
 7/31/16
 added !propscunt command
-also plans to !update command
+plans to add an !update command
 
 7/25/16
 changed autowoot command response to RCS instead of plugcubed in en.json
