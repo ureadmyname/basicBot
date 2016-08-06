@@ -16,7 +16,7 @@ deduction(s):
 
 Diplo & GTA - Boy Oh Boy.
 
-also any bass boosted versions of the songs on the op list are no longer allowed.
+also any bass boosted, nightstep or nightcore versions of the songs on the op list are no longer allowed.
 
 made a change to basicbot.js line 971, should now link oplist after an op song is played,
 may have to revert this change if the bot is broken because of my bad coding skills.
