@@ -1,14 +1,17 @@
 QTBOT and Github updates:
 
+8/7/16
+changed autowoot command response to RCS instead of plugcubed in en.json
+reached max limit on responses (100) to the community question on questionpro,
+changed the link in the extension to qtbot for the community question
+added !update command
+
 8/5/16
 changed weekly question name to community question
 
 7/31/16
 added !propscunt command
 plans to add an !update command
-
-7/25/16
-changed autowoot command response to RCS instead of plugcubed in en.json
 
 7/25/16
 added !admin command to the extension.js
