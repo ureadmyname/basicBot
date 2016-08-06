@@ -1,4 +1,4 @@
-QTBOT and Github updates:
+QTBOT and Github update log:
 
 8/7/16
 massive changes to the op list coming soon;
