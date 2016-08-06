@@ -143,6 +143,7 @@ User
 |!theme | | links to the room's theme |
 |!twitch | | "theqtpi" twitch link |
 |!twitchlive | | "theqtpi" twitch link when she is live |
+|!update | | links to the github update log of qtbot |
 |!website | | links to the room's website (not set in settings) |
 |!subinfo | | explain what the plug.dj subscription service means |
 |!youtube | | links to the room's youtube page (not set in settings) |
