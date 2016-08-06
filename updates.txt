@@ -24,6 +24,7 @@ changed autowoot command response to RCS instead of plugcubed in en.json.
 reached max limit on responses (100) to the community question on questionpro,
 changed the link in the extension to qtbot for the community question.
 
+removed !allbotstuff command (just was a command that was unneeded.)
 added !update command.
 
 8/5/16
