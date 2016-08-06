@@ -324,7 +324,7 @@
 "askskip": "\/me @%%NAME%%, don't ask for skips.",
 "autodisable": "autodisable",
 "autoskip": "autoskip",
-"autowoot": "\/me We recommend PlugCubed for autowooting: http:\/\/plugcubed.net\/",
+"autowoot": "\/me We recommend RCS for autowooting: https:\/\/rcs.radiant.dj\/",
 "ball": "\/me %%NAME%%'s question was: \"%%QUESTION%%\" and %%BOTNAME%%'s response is: \"%%RESPONSE%%\"",
 "blacklist": "blacklist",
 "blinfo": "[@%%NAME%%] Blacklist Info - author: %%AUTHOR%%, title: %%TITLE%%, mid: %%SONGID%%",
