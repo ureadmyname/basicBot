@@ -968,6 +968,7 @@ basicBot.roomUtilities.booth.unlockBooth();
                 if (basicBot.settings.blacklistEnabled) {
                     if (basicBot.room.blacklists[bl].indexOf(mid) > -1) {
                         API.sendChat(subChat(basicBot.chat.isblacklisted, {blacklist: bl}));
+                        API.sendChat(subChat(basicBot.chat.oplist, {link: op}));
 if (basicBot.settings.smartSkip){
 return basicBot.roomUtilities.smartSkip();
 }
