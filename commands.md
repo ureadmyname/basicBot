@@ -160,7 +160,7 @@ All Sub-Commands
 ||theme | if the song doesn't fit the room theme  |
 ||unavailable | if the song is not available for some, most or all users |
 
-Coming Soon... Hop3fully
+Coming Soon...
 -------------------------
 
 |Command | Description | Estimated Time |
