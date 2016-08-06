@@ -1,20 +1,26 @@
 QTBOT and Github updates:
 
 8/7/16
-changed autowoot command response to RCS instead of plugcubed in en.json
+made a change to basicbot.js line 971, should now link oplist after an op song is played,
+may have to revert this change if the bot is broken because of my bad coding skills.
+
+changed autowoot command response to RCS instead of plugcubed in en.json.
+
 reached max limit on responses (100) to the community question on questionpro,
-changed the link in the extension to qtbot for the community question
-added !update command
+changed the link in the extension to qtbot for the community question.
+
+added !update command.
 
 8/5/16
-changed weekly question name to community question
+changed weekly question name to community question.
 
 7/31/16
-added !propscunt command
-plans to add an !update command
+added !propscunt command.
+
+plans to add an !update command.
 
 7/25/16
-added !admin command to the extension.js
+added !admin command to the extension.js.
 
 7/25/16
-updated "staff.md"
+updated "staff.md."
