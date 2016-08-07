@@ -43,5 +43,4 @@ plans to add an !update command.
 7/25/16
 added !admin command to the extension.js.
 
-7/25/16
 updated "staff.md."
