@@ -4,7 +4,7 @@ QTBOT and Github update log:
 updates to skiplist.md and index.md to reflect these changes.
 deduction(s) complete.
 additions complete.
-adding bass boosted, nightcore and nightstep remixes 50% complete.
+adding bass boosted, nightcore and nightstep remixes complete.
 
 massive changes to the op list coming soon;
 
