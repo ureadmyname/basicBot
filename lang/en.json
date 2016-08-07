@@ -364,7 +364,7 @@
 "invalidtime": "\/me [@%%NAME%%] Invalid time specified.",
 "invaliduserspecified": "\/me [@%%NAME%%] Invalid user specified.",
 "isopen": "\/me The roulette is now open! Type !join to participate!",
-"isblacklisted": "\/me This track is on the %%BLACKLIST%% blacklist! Skipping...",
+"isblacklisted": "\/me This track is on the %%BLACKLIST%% blacklist! Skipping... find the op list here: https://git.io/vOTmj",
 "jointime": "\/me [@%%NAMEFROM%%] @%%USERNAME%% has been in the room for %%TIME%%.",
 "kickrank": "\/me [@%%NAME%%] you can't kick users with an equal or higher rank than you!",
 "kick": "\/me [@%%NAME%%], @%%USERNAME%% you are being kicked from the community for %%TIME%% minutes.",
