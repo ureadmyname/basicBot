@@ -1,5 +1,8 @@
 QTBOT and Github update log:
 
+8/10/16
+updated !shots command to also work as !shot.
+
 8/7/16
 updates to skiplist.md and index.md to reflect these changes.
 deduction(s) complete.
