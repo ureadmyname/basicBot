@@ -3143,7 +3143,8 @@ console.log(basicBot.room.name);
             },
             
             shotsCommand: {
-                command: 'shots',
+            	command: ['dclookup', 'dc'],
+                command: ['shots', 'shot'],
                 rank: 'user',
                 type: 'startsWith',
                 getShots: function (chat) {
