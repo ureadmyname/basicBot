@@ -1,6 +1,7 @@
 QTBOT and Github update log:
 
 8/10/16
+updated Staff.md
 updated !shots command to also work as !shot.
 
 8/7/16
