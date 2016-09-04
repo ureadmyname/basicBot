@@ -138,6 +138,7 @@ User
 |!shots | (@user) | give someone a shot |
 |!staff | | small things that will improve your chances of getting staff in our community |
 |!shuffle | | show the meaning of Monday and Friday |
+|!shufflezones | | shows the timezones used in shuffle days |
 |!steam | | a link to our plugdj steam community so you can come game with us |
 |!theme | | links to the room's theme |
 |!twitch | | "theqtpi" twitch link |
