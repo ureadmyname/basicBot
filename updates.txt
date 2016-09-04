@@ -2,6 +2,7 @@ QTBOT and Github update log:
 
 9/5/16
 updated help command.
+added !shufflezones.
 
 8/10/16
 updated Staff.md
