@@ -1,8 +1,8 @@
 QTBOT and Github update log:
 
 9/5/16
-updated help command.
-added !shufflezones.
+updated help command, thanks to Isebella for picture.
+added !shufflezones, thanks to Miss Fluxy for picture.
 
 8/10/16
 updated Staff.md
