@@ -125,6 +125,7 @@ User
 |!help | | links to an image to help get people started on plug **NOT AVAILABLE FOR THE MOMENT**|
 |!illuminati | | plug.dj is illuminati confirmed! |
 |!join | | join the roulette if it's up |
+|!lastfm | | shows the recently played songs in the community |
 |!leave | | leave the roulette if you joined |
 |!link | | when the user is the DJ, give a link to the current song |
 |!op | | links to the OverPlayed list |
