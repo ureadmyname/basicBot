@@ -142,6 +142,7 @@ User
 |!shufflezones | | shows the timezones used in shuffle days |
 |!steam | | a link to our plugdj steam community so you can come game with us |
 |!theme | | links to the room's theme |
+|!triggered | | TRIGGERED! |
 |!twitch | | "theqtpi" twitch link |
 |!twitchlive | | "theqtpi" twitch link when she is live |
 |!update | | links to the github update log of qtbot |
