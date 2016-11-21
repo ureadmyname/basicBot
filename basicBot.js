@@ -263,7 +263,7 @@ return str;
             commandLiteral: "!",
             blacklists: {
                 NSFW: "https://rawgit.com/ureadmyname/basicBot-customization/master/ExampleNSFWlist.json",
-                OP: "https://rawgit.com/zeratul0/basicBot-customization/master/ExampleOPlist.json",
+                OP: "https://rawgit.com/ureadmyname/basicBot-customization/master/ExampleOPlist.json",
                 BANNED: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/BANNEDlist.json"
             }
         },
@@ -913,26 +913,29 @@ basicBot.roomUtilities.booth.unlockBooth();
             }
 
             var lastplay = obj.lastPlay;
-            if (typeof lastplay === 'undefined') return;
-            if (basicBot.settings.songstats) {
-                if (typeof basicBot.chat.songstatistics === "undefined") {
-                    API.sendChat("/me " + lastplay.media.author + " - " + lastplay.media.title + ": " + lastplay.score.positive + "W/" + lastplay.score.grabs + "G/" + lastplay.score.negative + "M.")
+            if (typeof lastplay !== 'undefined') {
+                if (basicBot.settings.songstats) {
+                    if (typeof basicBot.chat.songstatistics === "undefined") {
+                        API.sendChat("/me " + lastplay.media.author + " - " + lastplay.media.title + ": " + lastplay.score.positive + "W/" + lastplay.score.grabs + "G/" + lastplay.score.negative + "M.")
+                    }
+                    else {
+                        API.sendChat(subChat(basicBot.chat.songstatistics, {artist: lastplay.media.author, title: lastplay.media.title, woots: lastplay.score.positive, grabs: lastplay.score.grabs, mehs: lastplay.score.negative}))
+                    }
                 }
-                else {
-                    API.sendChat(subChat(basicBot.chat.songstatistics, {artist: lastplay.media.author, title: lastplay.media.title, woots: lastplay.score.positive, grabs: lastplay.score.grabs, mehs: lastplay.score.negative}))
-                }
+                basicBot.room.roomstats.totalWoots += lastplay.score.positive;
+                basicBot.room.roomstats.totalMehs += lastplay.score.negative;
+                basicBot.room.roomstats.totalCurates += lastplay.score.grabs;
             }
-            basicBot.room.roomstats.totalWoots += lastplay.score.positive;
-            basicBot.room.roomstats.totalMehs += lastplay.score.negative;
-            basicBot.room.roomstats.totalCurates += lastplay.score.grabs;
             basicBot.room.roomstats.songCount++;
             basicBot.roomUtilities.intervalMessage();
+                
             if (obj['dj'])
                 basicBot.room.currentDJID = obj.dj.id;
             else
                 basicBot.room.currentDJID = -1;
 
             var blacklistSkip = setTimeout(function () { 
+            if (!obj['media']) return;
             var mid = obj.media.format + ':' + obj.media.cid;
             for (var bl in basicBot.room.blacklists) {
                 if (basicBot.settings.blacklistEnabled) {
