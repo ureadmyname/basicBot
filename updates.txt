@@ -1,5 +1,8 @@
 QTBOT and Github update log:
 
+12/20/16
+Isebella forked code to change the kill and reload command to a manager command rather than a bouncer one.
+
 10/12/16
 Last.fm now records the recently played songs in the room.
 along with this is a new command !lastfm
