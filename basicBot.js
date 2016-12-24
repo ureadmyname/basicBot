@@ -3216,6 +3216,72 @@ console.log(basicBot.room.name);
                     }
                 }
             },
+		
+            slotsCommand: {
+                command: ['slots','sloots'],
+                rank: 'user',
+                type: 'exact',
+                cooldown: 5,
+                emojis: [":moneybag:", ":heart:", ":monkey_face:", ":bomb:", ":snail:"],
+                getRandomEmoji: function () {
+                    return this.emojis[Math.floor(Math.random() * this.emojis.length)];
+
+                },
+                magic: function(chat) {
+                    var rolls = [this.getRandomEmoji(), this.getRandomEmoji(), this.getRandomEmoji()];
+                    var rollsJoined = rolls.join(' ');
+                    var uid = chat.uid;
+                    var un = chat.un;
+                    switch (rollsJoined) {
+                case ":moneybag: :moneybag: :moneybag:":
+                            API.sendChat('@' + un + ' ' + rollsJoined + " It's not about the money money money..... Move up 2! ");
+                            if (API.getWaitListPosition(uid) !== -1) {
+                                basicBot.userUtilities.moveUser(uid, (API.getWaitListPosition(uid) + 2), true);
+                            } else {
+                                basicBot.userUtilities.moveUser(uid, (API.getWaitList().length > 3 ? (API.getWaitList().length - 2) : 1));
+                            }
+                            break;
+                        case ":bomb: :bomb: :bomb:":
+                            API.sendChat('@' + un + ' ' + rollsJoined + ' :boom: Oh no.... Muted for 15 minutes! ');
+                            var role = API.getUser(uid).role;
+                            if (role > 0) {
+                                API.moderateSetRole(uid, API.ROLE.NONE);
+                                API.moderateMuteUser(uid, 1, API.MUTE.SHORT);
+                                API.moderateSetRole(uid,  role);
+                            } else {
+                                API.moderateMuteUser(uid, 1, API.MUTE.SHORT);
+                            }
+                            break;
+                        
+                            case ":heart: :heart: :heart:":
+                            API.sendChat('@' + un + ' ' + rollsJoined + "Get ALL the hearts. Move up to 2 ");
+                            basicBot.userUtilities.moveUser(uid, +2, true);
+                            break;
+
+                        case ":monkey_face: :monkey_face: :monkey_face:":
+                            API.sendChat('@' + un + ' ' + rollsJoined + ' See no evil. Hear no evil. Do no evil.. Move up 1! ');
+                            if (API.getWaitListPosition(uid) !== -1) {
+                              basicBot.userUtilities.moveUser(uid, (API.getWaitListPosition(uid) + 1), true);
+                            } else {
+                                basicBot.userUtilities.moveUser(uid, (API.getWaitList().length > 2 ? (API.getWaitList().length - 1) : 1));
+                            }                            break;
+                        case ":snail: :snail: :snail":
+                            API.sendChat('@' + un + ' ' + rollsJoined + 'Snail is love. Snail is life. Move up to 1!');
+                            basicBot.userUtilities.moveUser(uid, +1, true);
+                            break;
+                        default:
+                            API.sendChat('@' + un + ' ' + rollsJoined + " Sorry, you didn't win. ");
+                        }
+                    },
+                    functionality: function (chat, cmd) {
+                        if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
+                        if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                        else {
+                            if (API.getDJ() && API.getDJ().id === chat.uid) return API.sendChat("You can't play slots while DJing!");
+                            this.magic(chat);
+                        }
+                    }
+                },
 
             songstatsCommand: {
                 command: 'songstats',
