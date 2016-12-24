@@ -3221,7 +3221,6 @@ console.log(basicBot.room.name);
                 command: ['slots','sloots'],
                 rank: 'user',
                 type: 'exact',
-                cooldown: 5,
                 emojis: [":moneybag:", ":heart:", ":monkey_face:", ":bomb:", ":snail:"],
                 getRandomEmoji: function () {
                     return this.emojis[Math.floor(Math.random() * this.emojis.length)];
