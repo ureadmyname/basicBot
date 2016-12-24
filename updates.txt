@@ -1,7 +1,7 @@
 QTBOT and Github update log:
 
 12/25/16
-Added !slots command thanks to Iseabella.
+Added !slots command thanks to Isebella.
 
 12/20/16
 Isebella forked code to change the kill and reload command to a manager command rather than a bouncer one.
