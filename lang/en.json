@@ -1,11 +1,9 @@
 {
 "balls": [
-"I would answer but qtbot is drunk right now, shhhh.",
-"The #dolphingang would know, I don't.",
+"I would answer but nerdbot is drunk right now, shhhh.",
 "Concentrate and ask again.",
 "Yer, something like that.",
 "Better not tell you now.",
-"I don't know, ask QTπ.",
 "Reply hazy, try again.",
 "You will have to wait.",
 "Outlook not so good.",
@@ -35,7 +33,6 @@
 "IDC, at all.",
 "Most likely.",
 ":trollface:",
-"DEEZ NUTS!",
 "I.D.G.A.F.",
 "Who knows?",
 "Probably.",
@@ -464,26 +461,26 @@
 "prop": "\/me Song props: %%NAMEFROM%% says, %%PROP%% to %%DJ%%.",
 "propcunt": "\/me Song props: %%NAMEFROM%% says, %%PROPCUNT%% to %%DJ%%.",
 
-"eatcandy": "/me [qtbot] eats a candy.",
-"nousercandy": "/em [qtbot] doesn't see %%NAME%% in this room.",
-"selfcandy": "/me [qtbot] @%%NAME%%, Giving candies to yourself, How about giving other people candies :)",
-"candy": "/me [qtbot]: @%%NAMEFROM%% gives @%%NAMETO%%, %%CANDY%%!",
+"eatcandy": "/me [nerd bot] eats a candy.",
+"nousercandy": "/em [nerd bot] doesn't see %%NAME%% in this room.",
+"selfcandy": "/me [nerd bot] @%%NAME%%, Giving candies to yourself, How about giving other people candies :)",
+"candy": "/me [nerd bot]: @%%NAMEFROM%% gives @%%NAMETO%%, %%CANDY%%!",
 
 
-"eatshots": "/me [qtbot] takes a shot.",
-"nousershots": "/em [qtbot] doesn't see %%NAME%% in this room.",
-"selfshots": "/me [qtbot] @%%NAME%%, Buying yourself a shot, How about you buy a round for once :)",
-"shot": "/me [qtbot]: @%%NAMEFROM%% buys @%%NAMETO%% a shot, %%SHOT%%!",
+"eatshots": "/me [nerd bot] takes a shot.",
+"nousershots": "/em [nerd bot] doesn't see %%NAME%% in this room.",
+"selfshots": "/me [nerd bot] @%%NAME%%, Buying yourself a shot, How about you buy a round for once :)",
+"shot": "/me [nerd bot]: @%%NAMEFROM%% buys @%%NAMETO%% a shot, %%SHOT%%!",
 
-"eatk1tt": "/me [qtbot] takes a shot.",
-"nouserk1tt": "/em [qtbot] doesn't see %%NAME%% in this room.",
-"selfk1tt": "/me [qtbot] @%%NAMETO%%, You buy yourself a shot, %%K1TT%%",
-"k1tt": "/me [qtbot]: @%%NAMEFROM%% buys @%%NAMETO%% a shot, %%K1TT%%!",
+"eatk1tt": "/me [nerd bot] takes a shot.",
+"nouserk1tt": "/em [nerd bot] doesn't see %%NAME%% in this room.",
+"selfk1tt": "/me [nerd bot] @%%NAMETO%%, You buy yourself a shot, %%K1TT%%",
+"k1tt": "/me [nerd bot]: @%%NAMEFROM%% buys @%%NAMETO%% a shot, %%K1TT%%!",
 
 "eatfortune": "/me ",
-"nouserfortune": "/em [qtbot] doesn't see %%NAME%% in this room.",
-"selffortune": "/me @%%NAMETO%%, you buy a fortune for yourself from, qtbot the fortune teller, qtbot says, '%%FORTUNE%%'",
-"fortune": "/me @%%NAMEFROM%% buys @%%NAMETO%% a fortune from, qtbot the fortune teller, qtbot says, '%%FORTUNE%%'",
+"nouserfortune": "/em [nerd bot] doesn't see %%NAME%% in this room.",
+"selffortune": "/me @%%NAMETO%%, you buy a fortune for yourself from, nerd bot the fortune teller, nerd bot says, '%%FORTUNE%%'",
+"fortune": "/me @%%NAMEFROM%% buys @%%NAMETO%% a fortune from, nerd bot the fortune teller, nerd bot says, '%%FORTUNE%%'",
 "letter1":[
 "A",
 "B",
@@ -631,5 +628,5 @@
 "Y",
 "Z"
 ],
-"letter": "[qtbot] Acronym: %%LETTER%%, %%LETTER2%%, %%LETTER3%%, %%LETTER4%%, %%LETTER5%%, %%LETTER6%%"
+"letter": "[nerd bot] Acronym: %%LETTER%%, %%LETTER2%%, %%LETTER3%%, %%LETTER4%%, %%LETTER5%%, %%LETTER6%%"
 }
