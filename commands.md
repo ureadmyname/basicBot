@@ -13,13 +13,9 @@ Manager+
 |!add | @user | add user to the waitlist |
 |!afklimit | X | sets the maximum afk time |
 |!afkremoval | | toggles the afk check |
-|!autoappear | | make !appear be displayed on a timer |
-|!autodubtrack | | make !dubtrack be displayed on a timer |
 |!autofav | | make !fav be displayed on a timer |
-|!autoquestion | | make !question be displayed on a timer |
 |!autoroulette | | make !roulette be displayed on a timer |
 |!autorules | | make !rules be displayed on a timer |
-|!autoshuffle | | make !shuffle be displayed on a timer |
 |!autoskip | | skips songs automatically when they're done (use when the circles-bug happens) |
 |!autotwitch | | make !twitchlive be displayed on a timer (use when TheQTpi is livestreaming) |
 |!botname |	(botname) | change the default bot name |
@@ -103,17 +99,14 @@ User
 |!8ball | (message) | ask the bot a question, the bot will return random variations of a yes or no answer |
 |!abuse | | explains how to use the !dc command properly, rather than abusing it |
 |!acronym | | 6 random letters will be made, try to make an acronym out of them |
-|!appear | | link to our appear.in room, come chat and show your face if you like |
 |!autowoot | | links to PlugCubed, the advised script/plugin to use for autowooting |
 |!ba | | explains the Brand Ambassador rank |
 |!candy | (@user) | give a random candy to a user |
 |!commands | | gives a link to the commands |
 |!cookie | (@user) | give a cookie to someone |
 |!dcinfo | | information about the dc command |
-|!dclookup / !dc | | use dclookup on yourself |
-|!discord | | links to our discord room where you can come and talk to us |
+|!dclookup / !dc | | use dclookup on yourself 
 |!djcycleinfo | | explains what the djcycle setting does |
-|!dubtrack | | check out our other room on dubtrack.fm so you can still jam with us when plug is down |
 |!emoji | | a link to a list with emoji's |
 |!eta | | shows how long before you reach the booth |
 |!fav | | remind people to favorite the room |
@@ -125,29 +118,21 @@ User
 |!help | | links to an image to help get people started on plug **NOT AVAILABLE FOR THE MOMENT**|
 |!illuminati | | plug.dj is illuminati confirmed! |
 |!join | | join the roulette if it's up |
-|!lastfm | | shows the recently played songs in the community |
 |!leave | | leave the roulette if you joined |
 |!link | | when the user is the DJ, give a link to the current song |
 |!op | | links to the OverPlayed list |
 |!ping | | pong! |
 |!props | | give a song "props" made to show appreciation to a good song |
-|!question | | link to our weekly question that gives you input towards changing our community |
 |!ref | | the "I.T" support command for plug.dj |
 |!rouletteinfo | | explains the roulette to people who don't know what it is |
 |!rule8 | | refers to the holy rule8 |
 |!rules | | links to the rules |
 |!shots | (@user) | give someone a shot |
-|!staff | | small things that will improve your chances of getting staff in our community |
-|!shuffle | | show the meaning of Monday and Friday |
-|!shufflezones | | shows the timezones used in shuffle days |
-|!steam | | a link to our plugdj steam community so you can come game with us |
 |!theme | | links to the room's theme |
 |!triggered | | TRIGGERED! |
-|!twitch | | "theqtpi" twitch link |
-|!twitchlive | | "theqtpi" twitch link when she is live |
-|!update | | links to the github update log of qtbot |
+|!twitch | |  twitch link |
+|!twitchlive | |  twitch link when live |
 |!website | | links to the room's website (not set in settings) |
-|!subinfo | | explain what the plug.dj subscription service means |
 |!youtube | | links to the room's youtube page (not set in settings) |
 
 
